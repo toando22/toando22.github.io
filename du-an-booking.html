@@ -1,388 +1,605 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+      Chi tiết Dự án - Hệ thống Đặt lịch Khám bệnh (Booking Healthy)
+    </title>
+    <meta
+      name="description"
+      content="Chi tiết dự án Hệ thống Đặt lịch Khám bệnh (Spring Boot, MySQL, Thymeleaf) của Đỗ Duy Toàn."
+    />
+    <meta
+      name="keywords"
+      content="Đỗ Duy Toàn, Java, Spring Boot, MySQL, Thymeleaf, Booking"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Chi tiết Dự án - Hệ thống Đặt lịch Khám bệnh (Booking Healthy)</title>
-  <meta name="description" content="Chi tiết dự án Hệ thống Đặt lịch Khám bệnh (Spring Boot, MySQL, Thymeleaf) của Đỗ Duy Toàn.">
-  <meta name="keywords" content="Đỗ Duy Toàn, Java, Spring Boot, MySQL, Thymeleaf, Booking">
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
 
-  <link href="assets/css/main.css" rel="stylesheet">
+  <body class="portfolio-details-page">
+    <header
+      id="header"
+      class="header dark-background d-flex flex-column justify-content-between"
+    >
+      <i class="header-toggle d-xl-none bi bi-list"></i>
 
-</head>
+      <div class="header-top">
+        <div class="profile-img">
+          <img
+            src="assets/img/profile/avatar_index.jpg"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
 
-<body class="portfolio-details-page">
-
-  <header id="header" class="header dark-background d-flex flex-column justify-content-between">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="header-top">
-      <div class="profile-img">
-        <img src="assets/img/profile/avatar_index.jpg" alt="" class="img-fluid">
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center justify-content-center"
+        >
+          <h1 class="sitename">Đỗ Duy Toàn</h1>
+        </a>
       </div>
 
-      <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-        <h1 class="sitename">Đỗ Duy Toàn</h1>
-      </a>
-
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Trang chủ</a></li>
-        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> Giới thiệu</a></li>
-        <li><a href="index.html#skills"><i class="bi bi-bar-chart-steps navicon"></i> Kỹ năng</a></li>
-        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Hồ sơ</a></li>
-        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Dự án</a></li>
-        <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i> Chuyên môn</a></li>
-        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Liên hệ</a></li>
-      </ul>
-    </nav>
-<div class="language-switcher">
-  <a href="index.html" class="lang-vi active" title="Tiếng Việt">
-    <img src="assets/img/flags/vi.png" alt="Tiếng Việt">
-  </a>
-  <a href="en/index.html" class="lang-en" title="English">
-    <img src="assets/img/flags/en.png" alt="English">
-  </a>
-</div>
-    <div class="social-links text-center">
-      <a href="https://github.com/toando22" target="_blank" class="github"><i class="bi bi-github"></i></a>
-      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-    </div>
-
-  </header>
-
-  <main class="main">
-
-    <div class="page-title light-background">
-      <div class="container">
-        <h1>Chi tiết Dự án</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Trang chủ</a></li>
-            <li class="current">Chi tiết: Hệ thống Đặt lịch Khám bệnh</li>
-          </ol>
-        </nav>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li>
+            <a href="index.html#hero"
+              ><i class="bi bi-house navicon"></i>Trang chủ</a
+            >
+          </li>
+          <li>
+            <a href="index.html#about"
+              ><i class="bi bi-person navicon"></i> Giới thiệu</a
+            >
+          </li>
+          <li>
+            <a href="index.html#skills"
+              ><i class="bi bi-bar-chart-steps navicon"></i> Kỹ năng</a
+            >
+          </li>
+          <li>
+            <a href="index.html#resume"
+              ><i class="bi bi-file-earmark-text navicon"></i> Hồ sơ</a
+            >
+          </li>
+          <li>
+            <a href="index.html#portfolio"
+              ><i class="bi bi-images navicon"></i> Dự án</a
+            >
+          </li>
+          <li>
+            <a href="index.html#services"
+              ><i class="bi bi-hdd-stack navicon"></i> Chuyên môn</a
+            >
+          </li>
+          <li>
+            <a href="index.html#contact"
+              ><i class="bi bi-envelope navicon"></i> Liên hệ</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="language-switcher">
+        <a href="index.html" class="lang-vi active" title="Tiếng Việt">
+          <img src="assets/img/flags/vi.png" alt="Tiếng Việt" />
+        </a>
+        <a href="en/index.html" class="lang-en" title="English">
+          <img src="assets/img/flags/en.png" alt="English" />
+        </a>
       </div>
-    </div><section id="portfolio-details" class="portfolio-details section">
+      <div class="social-links text-center">
+        <a href="https://github.com/toando22" target="_blank" class="github"
+          ><i class="bi bi-github"></i
+        ></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      </div>
+    </header>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="hero-section">
-          <div class="row align-items-center">
-            <div class="col-lg-6" data-aos="fade-right">
-              <div class="project-header">
-                <div class="project-meta">
-                  <span class="category">Web Application</span>
-                  <span class="year">2024</span>
-                </div>
-                <h1 class="project-title">Hệ thống Đặt lịch Khám bệnh (Booking Healthy)</h1>
-                <p class="project-summary">Dự án nhóm (vai trò Trưởng nhóm) xây dựng hệ thống đặt lịch khám, mô phỏng các trang web y tế. Mục tiêu là số hóa quy trình đặt lịch, giảm tải cho nhân viên y tế và cung cấp trải nghiệm tiện lợi cho bệnh nhân.</p>
-                <div class="project-tags">
-                  <span class="tag">Java 17</span>
-                  <span class="tag">Spring Boot</span>
-                  <span class="tag">Spring Security</span>
-                  <span class="tag">MySQL</span>
-                  <span class="tag">Thymeleaf</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-              <div class="hero-image">
-                <img src="assets/img/portfolio/portfolio-3.webp" alt="Dự án Booking Healthy" class="img-fluid" loading="lazy">
-              </div>
-            </div>
-          </div>
+    <main class="main">
+      <div class="page-title light-background">
+        <div class="container">
+          <h1>Chi tiết Dự án</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Trang chủ</a></li>
+              <li class="current">Chi tiết: Hệ thống Đặt lịch Khám bệnh</li>
+            </ol>
+          </nav>
         </div>
-
-        <div class="visual-showcase" data-aos="fade-up" data-aos-delay="100">
-          <div class="showcase-gallery">
-            <div class="gallery-item large" data-aos="zoom-in" data-aos-delay="150">
-              <img src="assets/img/portfolio/portfolio-7.webp" alt="Giao diện trang chủ" class="img-fluid glightbox">
-            </div>
-            <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/portfolio/portfolio-5.webp" alt="Trang quản trị Admin" class="img-fluid glightbox">
-            </div>
-            <div class="gallery-item" data-aos="fade-up" data-aos-delay="250">
-              <img src="assets/img/portfolio/portfolio-8.webp" alt="Chức năng đặt lịch" class="img-fluid glightbox">
-            </div>
-          </div>
-        </div>
-
-        <div class="content-section">
-          <div class="row">
-            <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-              <div class="main-content">
-                <h2>Mô tả Kỹ thuật & Vai trò</h2>
-                <p>Đây là dự án quan trọng, mô phỏng một hệ thống đặt lịch y tế (Booking) hoàn chỉnh. Thách thức lớn nhất là thiết kế một CSDL quan hệ (MySQL) phức tạp và xây dựng một hệ thống API (Spring Boot) an toàn, có khả năng phân quyền cho nhiều đối tượng.</p>
-                <p>Với vai trò **Trưởng nhóm (Team Lead) và Lập trình viên Backend chính**, tôi chịu trách nhiệm:</p>
-                <ul>
-                  <li>Thiết kế CSDL (ERD) bao gồm các bảng: Bệnh nhân, Bác sĩ, Lịch hẹn, Chuyên khoa, Hóa đơn,...</li>
-                  <li>Phân công nhiệm vụ cho 3 thành viên, review code trên GitHub trước khi merge vào nhánh main.</li>
-                  <li>Chịu trách nhiệm chính cho module API, CSDL, và tích hợp **Spring Security** để phân quyền (ADMIN, DOCTOR, PATIENT).</li>
-                  <li>Xây dựng các RESTful API (sử dụng Spring Boot) cho các chức năng CRUD.</li>
-                  <li>Tích hợp module gửi email tự động (SMTP) để xác nhận lịch hẹn cho bệnh nhân.</li>
-                  <li>Tích hợp giao diện (Thymeleaf, Bootstrap) với Backend.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-4 offset-lg-1" data-aos="fade-up" data-aos-delay="200">
-              <div class="project-specs">
-                <div class="spec-item">
-                  <h5>Loại dự án</h5>
-                  <p>Đồ án môn học (Phát triển Ứng dụng Web)</p>
-                </div>
-                <div class="spec-item">
-                  <h5>Thời gian</h5>
-                  <p>T6/2024 - T8/2024 (3 tháng)</p>
-                </div>
-                <div class="spec-item">
-                  <h5>Vai trò</h5>
-                  <p>Trưởng nhóm / Lập trình viên Backend</p>
-                </div>
-                <div class="spec-item">
-                  <h5>Đội ngũ</h5>
-                  <p>3 thành viên</p>
-                </div>
-                <div class="spec-item">
-                  <h5>Sản phẩm</h5>
-                  <p>Web Application (Triển khai Localhost)</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="process-timeline" data-aos="fade-up" data-aos-delay="100">
-          <div class="timeline-header">
-            <h2>Quy trình Thực hiện</h2>
-          </div>
-          <div class="timeline-steps">
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="150">
-              <div class="step-marker">
-                <span class="step-number">1</span>
-              </div>
-              <div class="step-content">
-                <h4>Phân tích & Thiết kế CSDL</h4>
-                <p>Phân tích yêu cầu, vẽ Sơ đồ Lớp (Class Diagram) và Sơ đồ Quan hệ Thực thể (ERD). Thiết kế các bảng trên MySQL Workbench.</p>
-              </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-              <div class="step-marker">
-                <span class="step-number">2</span>
-              </div>
-              <div class="step-content">
-                <h4>Xây dựng Backend API (Spring Boot)</h4>
-                <p>Xây dựng các Model, Repository (Spring Data JPA), Service và Controller. Viết các RESTful API cho chức năng CRUD, kiểm thử bằng Postman.</p>
-              </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="250">
-              <div class="step-marker">
-                <span class="step-number">3</span>
-              </div>
-              <div class="step-content">
-                <h4>Tích hợp Bảo mật (Spring Security)</h4>
-                <p>Cấu hình Spring Security, mã hóa mật khẩu (BCrypt) và phân quyền dựa trên vai trò (Role-Based Authorization) cho Admin, Bác sĩ và Bệnh nhân.</p>
-              </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-              <div class="step-marker">
-                <span class="step-number">4</span>
-              </div>
-              <div class="step-content">
-                <h4>Xây dựng Frontend (Thymeleaf)</h4>
-                <p>Tích hợp giao diện HTML/Bootstrap với template engine Thymeleaf để hiển thị dữ liệu động từ Backend, xử lý form và validation.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="tools-section" data-aos="fade-up" data-aos-delay="100">
-          <div class="row align-items-center">
-            <div class="col-lg-5">
-              <h2>Công cụ & Công nghệ</h2>
-              <p>Dự án này sử dụng toàn bộ hệ sinh thái Java Spring để xây dựng một ứng dụng web MVC hoàn chỉnh.</p>
-            </div>
-            <div class="col-lg-6 offset-lg-1">
-              <div class="tools-grid">
-                <div class="tool-category" data-aos="fade-up" data-aos-delay="150">
-                  <h5>Ngôn ngữ & Backend</h5>
-                  <div class="tool-list">
-                    <span class="tool-item">Java 17</span>
-                    <span class="tool-item">Spring Boot</span>
-                    <span class="tool-item">Spring Security</span>
-                    <span class="tool-item">Spring Data JPA</span>
+      </div>
+      <section id="portfolio-details" class="portfolio-details section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="hero-section">
+            <div class="row align-items-center">
+              <div class="col-lg-6" data-aos="fade-right">
+                <div class="project-header">
+                  <div class="project-meta">
+                    <span class="category">Web Application</span>
+                    <span class="year">2024</span>
+                  </div>
+                  <h1 class="project-title">
+                    Hệ thống Đặt lịch Khám bệnh (Booking Healthy)
+                  </h1>
+                  <p class="project-summary">
+                    Dự án cá nhân xây dựng hệ thống đặt lịch khám, mô phỏng các
+                    trang web y tế. Mục tiêu là số hóa quy trình đặt lịch, giảm
+                    tải cho nhân viên y tế và cung cấp trải nghiệm tiện lợi cho
+                    bệnh nhân.
+                  </p>
+                  <div class="project-tags">
+                    <span class="tag">Java 17</span>
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">Spring Security</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Thymeleaf</span>
                   </div>
                 </div>
-                <div class="tool-category" data-aos="fade-up" data-aos-delay="200">
-                  <h5>Frontend & CSDL</h5>
-                  <div class="tool-list">
-                    <span class="tool-item">Thymeleaf</span>
-                    <span class="tool-item">Bootstrap 5</span>
-                    <span class="tool-item">MySQL</span>
-                    <span class="tool-item">Hibernate</span>
-                  </div>
+              </div>
+              <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                <div class="hero-image">
+                  <img
+                    src="assets/img/portfolio/bookinghealthy_1.png"
+                    alt="Dự án Booking Healthy"
+                    class="img-fluid"
+                    loading="lazy"
+                  />
                 </div>
-                <div class="tool-category" data-aos="fade-up" data-aos-delay="250">
-                  <h5>Công cụ & Môi trường</h5>
-                  <div class="tool-list">
-                    <span class="tool-item">IntelliJ IDEA</span>
-                    <span class="tool-item">Postman</span>
-                    <span class="tool-item">Git & GitHub</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="visual-showcase" data-aos="fade-up" data-aos-delay="100">
+            <div class="showcase-gallery">
+              <div
+                class="gallery-item large"
+                data-aos="zoom-in"
+                data-aos-delay="150"
+              >
+                <img
+                  src="assets/img/portfolio/bookinghealthy_2.png"
+                  alt="Giao diện trang chủ"
+                  class="img-fluid glightbox"
+                />
+              </div>
+              <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                <img
+                  src="assets/img/portfolio/bookinghealthy_3.png"
+                  alt="Trang quản trị Admin"
+                  class="img-fluid glightbox"
+                />
+              </div>
+              <div class="gallery-item" data-aos="fade-up" data-aos-delay="250">
+                <img
+                  src="assets/img/portfolio/bookinghealthy_5.png"
+                  alt="Chức năng đặt lịch"
+                  class="img-fluid glightbox"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="content-section">
+            <div class="row">
+              <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+                <div class="main-content">
+                  <h2>Mô tả Kỹ thuật & Vai trò</h2>
+                  <p>
+                    Đây là dự án quan trọng, mô phỏng một hệ thống đặt lịch y tế
+                    (Booking) hoàn chỉnh. Thách thức lớn nhất là thiết kế một
+                    CSDL quan hệ (MySQL) phức tạp và xây dựng một hệ thống API
+                    (Spring Boot) an toàn, có khả năng phân quyền cho nhiều đối
+                    tượng.
+                  </p>
+                  <p>
+                    Với vai trò **Lập trình viên Backend chính**, tôi chịu trách
+                    nhiệm:
+                  </p>
+                  <ul>
+                    <li>
+                      Thiết kế CSDL (ERD) bao gồm các bảng: Bệnh nhân, Bác sĩ,
+                      Lịch hẹn, Chuyên khoa, Hóa đơn,...
+                    </li>
+                    <li>
+                      Phân công nhiệm vụ cho 3 thành viên, review code trên
+                      GitHub trước khi merge vào nhánh main.
+                    </li>
+                    <li>
+                      Chịu trách nhiệm chính cho module API, CSDL, và tích hợp
+                      **Spring Security** để phân quyền (ADMIN, DOCTOR,
+                      PATIENT).
+                    </li>
+                    <li>
+                      Xây dựng các RESTful API (sử dụng Spring Boot) cho các
+                      chức năng CRUD.
+                    </li>
+                    <li>
+                      Tích hợp module gửi email tự động (SMTP) để xác nhận lịch
+                      hẹn cho bệnh nhân.
+                    </li>
+                    <li>
+                      Tích hợp giao diện (Thymeleaf, Bootstrap) với Backend.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 offset-lg-1"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="project-specs">
+                  <div class="spec-item">
+                    <h5>Loại dự án</h5>
+                    <p>Đồ án môn học (Phát triển Ứng dụng Web)</p>
+                  </div>
+                  <div class="spec-item">
+                    <h5>Thời gian</h5>
+                    <p>T6/2024 - T8/2024 (3 tháng)</p>
+                  </div>
+                  <div class="spec-item">
+                    <h5>Vai trò</h5>
+                    <p>Trưởng nhóm / Lập trình viên Backend</p>
+                  </div>
+                  <div class="spec-item">
+                    <h5>Đội ngũ</h5>
+                    <p>3 thành viên</p>
+                  </div>
+                  <div class="spec-item">
+                    <h5>Sản phẩm</h5>
+                    <p>Web Application (Triển khai Localhost)</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="impact-metrics" data-aos="fade-up" data-aos-delay="100">
-          <div class="metrics-container">
-            <div class="metrics-header">
-              <h2>Kết quả Dự án</h2>
-              <p>Các chức năng chính đã được hoàn thành và kiểm thử, hệ thống chạy ổn định trên môi trường localhost.</p>
+          <div class="process-timeline" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-header">
+              <h2>Quy trình Thực hiện</h2>
             </div>
-            <div class="metrics-grid">
-              <div class="metric-card" data-aos="fade-up" data-aos-delay="150">
-                <div class="metric-value">100%</div>
-                <div class="metric-label">Các chức năng CRUD</div>
+            <div class="timeline-steps">
+              <div
+                class="timeline-item"
+                data-aos="fade-up"
+                data-aos-delay="150"
+              >
+                <div class="step-marker">
+                  <span class="step-number">1</span>
+                </div>
+                <div class="step-content">
+                  <h4>Phân tích & Thiết kế CSDL</h4>
+                  <p>
+                    Phân tích yêu cầu, vẽ Sơ đồ Lớp (Class Diagram) và Sơ đồ
+                    Quan hệ Thực thể (ERD). Thiết kế các bảng trên MySQL
+                    Workbench.
+                  </p>
+                </div>
               </div>
-              <div class="metric-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="metric-value">3</div>
-                <div class="metric-label">Vai trò (Admin, Bác sĩ, Bệnh nhân)</div>
+              <div
+                class="timeline-item"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="step-marker">
+                  <span class="step-number">2</span>
+                </div>
+                <div class="step-content">
+                  <h4>Xây dựng Backend API (Spring Boot)</h4>
+                  <p>
+                    Xây dựng các Model, Repository (Spring Data JPA), Service và
+                    Controller. Viết các RESTful API cho chức năng CRUD, kiểm
+                    thử bằng Postman.
+                  </p>
+                </div>
               </div>
-              <div class="metric-card" data-aos="fade-up" data-aos-delay="250">
-                <div class="metric-value">12+</div>
-                <div class="metric-label">Bảng CSDL (Tables)</div>
+              <div
+                class="timeline-item"
+                data-aos="fade-up"
+                data-aos-delay="250"
+              >
+                <div class="step-marker">
+                  <span class="step-number">3</span>
+                </div>
+                <div class="step-content">
+                  <h4>Tích hợp Bảo mật (Spring Security)</h4>
+                  <p>
+                    Cấu hình Spring Security, mã hóa mật khẩu (BCrypt) và phân
+                    quyền dựa trên vai trò (Role-Based Authorization) cho Admin,
+                    Bác sĩ và Bệnh nhân.
+                  </p>
+                </div>
               </div>
-              <div class="metric-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="metric-value">25+</div>
-                <div class="metric-label">API Endpoints</div>
+              <div
+                class="timeline-item"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="step-marker">
+                  <span class="step-number">4</span>
+                </div>
+                <div class="step-content">
+                  <h4>Xây dựng Frontend (Thymeleaf)</h4>
+                  <p>
+                    Tích hợp giao diện HTML/Bootstrap với template engine
+                    Thymeleaf để hiển thị dữ liệu động từ Backend, xử lý form và
+                    validation.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="additional-gallery" data-aos="fade-up" data-aos-delay="100">
-          <div class="gallery-slider swiper init-swiper">
-            <script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 600,
-                "autoplay": {
-                  "delay": 4000
-                },
-                "slidesPerView": 1,
-                "spaceBetween": 30,
-                "breakpoints": {
-                  "768": {
-                    "slidesPerView": 2
+          <div class="tools-section" data-aos="fade-up" data-aos-delay="100">
+            <div class="row align-items-center">
+              <div class="col-lg-5">
+                <h2>Công cụ & Công nghệ</h2>
+                <p>
+                  Dự án này sử dụng toàn bộ hệ sinh thái Java Spring để xây dựng
+                  một ứng dụng web MVC hoàn chỉnh.
+                </p>
+              </div>
+              <div class="col-lg-6 offset-lg-1">
+                <div class="tools-grid">
+                  <div
+                    class="tool-category"
+                    data-aos="fade-up"
+                    data-aos-delay="150"
+                  >
+                    <h5>Ngôn ngữ & Backend</h5>
+                    <div class="tool-list">
+                      <span class="tool-item">Java 17</span>
+                      <span class="tool-item">Spring Boot</span>
+                      <span class="tool-item">Spring Security</span>
+                      <span class="tool-item">Spring Data JPA</span>
+                    </div>
+                  </div>
+                  <div
+                    class="tool-category"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <h5>Frontend & CSDL</h5>
+                    <div class="tool-list">
+                      <span class="tool-item">Thymeleaf</span>
+                      <span class="tool-item">Bootstrap 5</span>
+                      <span class="tool-item">MySQL</span>
+                      <span class="tool-item">Hibernate</span>
+                    </div>
+                  </div>
+                  <div
+                    class="tool-category"
+                    data-aos="fade-up"
+                    data-aos-delay="250"
+                  >
+                    <h5>Công cụ & Môi trường</h5>
+                    <div class="tool-list">
+                      <span class="tool-item">IntelliJ IDEA</span>
+                      <span class="tool-item">Postman</span>
+                      <span class="tool-item">Git & GitHub</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="impact-metrics" data-aos="fade-up" data-aos-delay="100">
+            <div class="metrics-container">
+              <div class="metrics-header">
+                <h2>Kết quả Dự án</h2>
+                <p>
+                  Các chức năng chính đã được hoàn thành và kiểm thử, hệ thống
+                  chạy ổn định trên môi trường localhost.
+                </p>
+              </div>
+              <div class="metrics-grid">
+                <div
+                  class="metric-card"
+                  data-aos="fade-up"
+                  data-aos-delay="150"
+                >
+                  <div class="metric-value">100%</div>
+                  <div class="metric-label">Các chức năng CRUD</div>
+                </div>
+                <div
+                  class="metric-card"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <div class="metric-value">3</div>
+                  <div class="metric-label">
+                    Vai trò (Admin, Bác sĩ, Bệnh nhân)
+                  </div>
+                </div>
+                <div
+                  class="metric-card"
+                  data-aos="fade-up"
+                  data-aos-delay="250"
+                >
+                  <div class="metric-value">12+</div>
+                  <div class="metric-label">Bảng CSDL (Tables)</div>
+                </div>
+                <div
+                  class="metric-card"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div class="metric-value">25+</div>
+                  <div class="metric-label">API Endpoints</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="additional-gallery"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="gallery-slider swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 4000
                   },
-                  "1200": {
-                    "slidesPerView": 3
+                  "slidesPerView": 1,
+                  "spaceBetween": 30,
+                  "breakpoints": {
+                    "768": {
+                      "slidesPerView": 2
+                    },
+                    "1200": {
+                      "slidesPerView": 3
+                    }
+                  },
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
                   }
-                },
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "type": "bullets",
-                  "clickable": true
                 }
-              }
-            </script>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="assets/img/portfolio/portfolio-12.webp" alt="Project detail" class="img-fluid glightbox" loading="lazy">
+              </script>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/portfolio/portfolio-12.webp"
+                    alt="Project detail"
+                    class="img-fluid glightbox"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/portfolio/portfolio-2.webp"
+                    alt="Project detail"
+                    class="img-fluid glightbox"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/portfolio/portfolio-6.webp"
+                    alt="Project detail"
+                    class="img-fluid glightbox"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/portfolio/portfolio-10.webp"
+                    alt="Project detail"
+                    class="img-fluid glightbox"
+                    loading="lazy"
+                  />
+                </div>
               </div>
-              <div class="swiper-slide">
-                <img src="assets/img/portfolio/portfolio-2.webp" alt="Project detail" class="img-fluid glightbox" loading="lazy">
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/portfolio/portfolio-6.webp" alt="Project detail" class="img-fluid glightbox" loading="lazy">
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/portfolio/portfolio-10.webp" alt="Project detail" class="img-fluid glightbox" loading="lazy">
-              </div>
+              <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="project-nav" data-aos="fade-up" data-aos-delay="100">
+            <div class="nav-wrapper">
+              <a href="du-an-ma-hoa.html" class="nav-link prev-project">
+                <div class="nav-content">
+                  <span class="nav-direction">← Dự án trước</span>
+                  <span class="nav-title">Ứng dụng Mã hóa RSA & ElGamal</span>
+                </div>
+              </a>
+              <a href="index.html#portfolio" class="nav-link all-projects">
+                <i class="bi bi-grid-3x3-gap"></i>
+                <span>Tất cả Dự án</span>
+              </a>
+              <a href="du-an-nong-san.html" class="nav-link next-project">
+                <div class="nav-content">
+                  <span class="nav-direction">Dự án tiếp →</span>
+                  <span class="nav-title"
+                    >Website Bán Nông sản (Greeny Farm)</span
+                  >
+                </div>
+              </a>
+            </div>
           </div>
         </div>
+      </section>
+    </main>
 
-        <div class="project-nav" data-aos="fade-up" data-aos-delay="100">
-          <div class="nav-wrapper">
-            <a href="du-an-ma-hoa.html" class="nav-link prev-project"> <div class="nav-content">
-                <span class="nav-direction">← Dự án trước</span>
-                <span class="nav-title">Ứng dụng Mã hóa RSA & ElGamal</span>
-              </div>
-            </a>
-            <a href="index.html#portfolio" class="nav-link all-projects">
-              <i class="bi bi-grid-3x3-gap"></i>
-              <span>Tất cả Dự án</span>
-            </a>
-            <a href="du-an-nong-san.html" class="nav-link next-project"> <div class="nav-content">
-                <span class="nav-direction">Dự án tiếp →</span>
-                <span class="nav-title">Website Bán Nông sản (Greeny Farm)</span>
-              </div>
-            </a>
-          </div>
-        </div>
-
-      </div>
-
-    </section></main>
-
-  <footer id="footer" class="footer light-background">
-    <div class="container">
-      <h3 class="sitename">Đỗ Duy Toàn</h3>
-      <p>Sinh viên năm 4 ngành CNTT tại Đại học Công nghiệp Hà Nội, tìm kiếm cơ hội thực tập Java Web & AI.</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://github.com/toando22" target="_blank"><i class="bi bi-github"></i></a>
-        <a href="#"><i class="bi bi-linkedin"></i></a>
-        <a href="#"><i class="bi bi-facebook"></i></a>
-      </div>
+    <footer id="footer" class="footer light-background">
       <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Đỗ Duy Toàn</strong> <span>All Rights Reserved</span>
+        <h3 class="sitename">Đỗ Duy Toàn</h3>
+        <p>
+          Sinh viên năm 4 ngành CNTT tại Đại học Công nghiệp Hà Nội, tìm kiếm cơ
+          hội thực tập Java Web & AI.
+        </p>
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://github.com/toando22" target="_blank"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
         </div>
-        <div class="credits">
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <div class="container">
+          <div class="copyright">
+            <span>Copyright</span>
+            <strong class="px-1 sitename">Đỗ Duy Toàn</strong>
+            <span>All Rights Reserved</span>
+          </div>
+          <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <div id="preloader"></div>
+    <div id="preloader"></div>
 
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

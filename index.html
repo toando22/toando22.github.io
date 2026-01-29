@@ -1,525 +1,623 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Trang cá nhân - Đỗ Duy Toàn</title>
+    <meta
+      name="description"
+      content="Trang cá nhân của Đỗ Duy Toàn - Lập trình viên Java Web, AI, Big Data. Portfolio dự án và kỹ năng."
+    />
+    <meta
+      name="keywords"
+      content="Đỗ Duy Toàn, Java Developer, Spring Boot, Python, AI, Big Data, Portfolio, Lập trình viên"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Trang cá nhân - Đỗ Duy Toàn</title>
-  <meta name="description" content="Trang cá nhân của Đỗ Duy Toàn - Lập trình viên Java Web, AI, Big Data. Portfolio dự án và kỹ năng.">
-  <meta name="keywords" content="Đỗ Duy Toàn, Java Developer, Spring Boot, Python, AI, Big Data, Portfolio, Lập trình viên">
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <link href="assets/css/main.css" rel="stylesheet">
-
+    <link href="assets/css/main.css" rel="stylesheet" />
   </head>
 
-<body class="index-page">
+  <body class="index-page">
+    <header
+      id="header"
+      class="header dark-background d-flex flex-column justify-content-between"
+    >
+      <i class="header-toggle d-xl-none bi bi-list"></i>
 
-  <header id="header" class="header dark-background d-flex flex-column justify-content-between">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="header-top">
-      <div class="profile-img">
-        <img src="assets/img/profile/avatar_index.jpg" alt="" class="img-fluid">
-      </div>
-
-      <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-        <h1 class="sitename">Đỗ Duy Toàn</h1>
-      </a>
-
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Trang chủ</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> Giới thiệu</a></li>
-        <li><a href="#skills"><i class="bi bi-bar-chart-steps navicon"></i> Kỹ năng</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Hồ sơ</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Dự án</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Chuyên môn</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Liên hệ</a></li>
-      </ul>
-    </nav>
-<div class="language-switcher">
-  <a href="index.html" class="lang-vi active" title="Tiếng Việt">
-    <img src="assets/img/flags/vi.png" alt="Tiếng Việt">
-  </a>
-  <a href="en/index.html" class="lang-en" title="English">
-    <img src="assets/img/flags/en.png" alt="English">
-  </a>
-</div>
-    <div class="social-links text-center">
-      <a href="https://github.com/toando22" target="_blank" class="github"><i class="bi bi-github"></i></a>
-      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-    </div>
-
-  </header>
-
-  <main class="main">
-
-    <section id="hero" class="hero section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-center">
-          <div class="col-lg-6 order-2 order-lg-1">
-            <div class="hero-content">
-              <h1 data-aos="fade-up" data-aos-delay="200">
-                Đỗ Duy Toàn
-                <p><span class="accent-text">Lập trình viên</span></p>
-              </h1>
-              <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
-                Tôi là Sinh viên Công nghệ Thông tin đam mê phát triển Backend (Java/Spring) và Trí tuệ Nhân tạo (Python).
-              </p>
-              <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
-                <a href="#portfolio" class="btn-primary">Xem Dự án</a>
-                <a href="#contact" class="btn-secondary">Liên hệ</a>
-              </div>
-              <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
-                <div class="stat-item">
-                  <span class="stat-number">6+</span>
-                  <span class="stat-label">Dự án Nổi bật</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number">3+</span>
-                  <span class="stat-label">Ngôn ngữ (Java, Python, C++)</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number">20+</span>
-                  <span class="stat-label">Kỹ năng & Công nghệ</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 order-1 order-lg-2">
-            <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
-              <div class="image-wrapper">
-                <img src="assets/img/profile/avatar_index.jpg" alt="Đỗ Duy Toàn - Lập trình viên Java" class="img-fluid main-image">
-                <div class="floating-card card-1" data-aos="fade-up" data-aos-delay="600">
-                  <i class="bi bi-code-braces"></i>
-                  <span>Java & Spring Boot</span>
-                </div>
-                <div class="floating-card card-2" data-aos="fade-up" data-aos-delay="700">
-                  <i class="bi bi-robot"></i>
-                  <span>AI & Big Data</span>
-                </div>
-                <div class="floating-card card-3" data-aos="fade-up" data-aos-delay="800">
-                  <i class="bi bi-filetype-py"></i>
-                  <span>Python</span>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="header-top">
+        <div class="profile-img">
+          <img
+            src="assets/img/profile/avatar_index.jpg"
+            alt=""
+            class="img-fluid"
+          />
         </div>
 
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center justify-content-center"
+        >
+          <h1 class="sitename">Đỗ Duy Toàn</h1>
+        </a>
       </div>
 
-    </section><section id="about" class="about section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-
-            <div class="intro-header text-center" data-aos="fade-up" data-aos-delay="150">
-              <h1>Chào bạn, tôi là Đỗ Duy Toàn</h1>
-              <p class="subtitle">Lập trình viên (Java Web, AI/Data) &amp; Sinh viên năm 4</p>
-            </div>
-
-            <div class="main-content-wrapper">
-              <div class="row align-items-start">
-
-                <div class="col-lg-4" data-aos="fade-right" data-aos-delay="200">
-                  <div class="profile-section">
-                    <div class="profile-image-container">
-                      <img src="assets/img/profile/index_1.jpg" class="img-fluid" alt="Đỗ Duy Toàn">
-                    </div>
-                    <div class="profile-meta">
-                      <div class="location">
-                        <i class="bi bi-geo-alt"></i>
-                        <span>Hà Nội, Việt Nam</span>
-                      </div>
-                      <div class="status">
-                        <div class="status-indicator"></div>
-                        <span>Sẵn sàng cho vị trí Thực tập sinh</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-8" data-aos="fade-left" data-aos-delay="250">
-                  <div class="content-area">
-
-                    <div class="story-block">
-                      <p class="lead-text">Tôi là sinh viên năm 4 ngành Công nghệ Thông tin tại Đại học Công nghiệp Hà Nội. Với kinh nghiệm thực chiến qua các dự án cá nhân sử dụng Java Spring Boot, tôi mong muốn được áp dụng kiến thức vào môi trường thực tế qua vị trí Thực tập sinh Java Web.</p>
-
-                      <p>Triết lý của tôi tập trung vào mã nguồn sạch, tối ưu và khả năng mở rộng. Không chỉ giới hạn ở Java Web, tôi còn có đam mê với các giải thuật phức tạp, Trí tuệ Nhân tạo và Phân tích Dữ liệu. Mục tiêu của tôi là học hỏi quy trình làm việc chuyên nghiệp, đóng góp vào các dự án của công ty và phát triển kỹ năng lập trình.</p>
-                    </div>
-
-                    <div class="expertise-grid">
-                      <div class="expertise-item" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="expertise-icon">
-                          <i class="bi bi-server"></i>
-                        </div>
-                        <div class="expertise-content">
-                          <h4>Phát triển Backend</h4>
-                          <p>Xây dựng RESTful API, xử lý logic nghiệp vụ và bảo mật bằng Spring Boot.</p>
-                        </div>
-                      </div>
-
-                      <div class="expertise-item" data-aos="zoom-in" data-aos-delay="350">
-                        <div class="expertise-icon">
-                          <i class="bi bi-lightbulb"></i>
-                        </div>
-                        <div class="expertise-content">
-                          <h4>AI & Data</h4>
-                          <p>Phân tích dữ liệu lớn và xây dựng mô hình AI nhận diện cảm xúc bằng Python.</p>
-                        </div>
-                      </div>
-
-                      <div class="expertise-item" data-aos="zoom-in" data-aos-delay="400">
-                        <div class="expertise-icon">
-                          <i class="bi bi-journal-code"></i>
-                        </div>
-                        <div class="expertise-content">
-                          <h4>Giải thuật & Bảo mật</h4>
-                          <p>Nghiên cứu Cấu trúc dữ liệu & Giải thuật, áp dụng vào các bài toán mã hóa (RSA, ElGamal).</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="philosophy-quote" data-aos="fade-up" data-aos-delay="450">
-                      <div class="quote-mark">"</div>
-                      <p>Học hỏi không ngừng là chìa khóa để phát triển trong ngành Công nghệ Thông tin.</p>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="bottom-section" data-aos="fade-up" data-aos-delay="500">
-              <div class="row align-items-center">
-                <div class="col-lg-6">
-                  <div class="collaboration-text">
-                    <h3>Hãy cùng nhau xây dựng những sản phẩm ý nghĩa</h3>
-                    <p>Tôi luôn sẵn sàng trao đổi về các cơ hội thực tập hoặc các dự án thú vị.</p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="action-buttons">
-                    <a href="#resume" class="btn-custom primary">Xem Hồ sơ CV</a>
-                    <a href="#contact" class="btn-custom secondary">Liên hệ</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li>
+            <a href="#hero" class="active"
+              ><i class="bi bi-house navicon"></i>Trang chủ</a
+            >
+          </li>
+          <li>
+            <a href="#about"><i class="bi bi-person navicon"></i> Giới thiệu</a>
+          </li>
+          <li>
+            <a href="#skills"
+              ><i class="bi bi-bar-chart-steps navicon"></i> Kỹ năng</a
+            >
+          </li>
+          <li>
+            <a href="#resume"
+              ><i class="bi bi-file-earmark-text navicon"></i> Hồ sơ</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio"><i class="bi bi-images navicon"></i> Dự án</a>
+          </li>
+          <li>
+            <a href="#services"
+              ><i class="bi bi-hdd-stack navicon"></i> Chuyên môn</a
+            >
+          </li>
+          <li>
+            <a href="#contact"
+              ><i class="bi bi-envelope navicon"></i> Liên hệ</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="language-switcher">
+        <a href="index.html" class="lang-vi active" title="Tiếng Việt">
+          <img src="assets/img/flags/vi.png" alt="Tiếng Việt" />
+        </a>
+        <a href="en/index.html" class="lang-en" title="English">
+          <img src="assets/img/flags/en.png" alt="English" />
+        </a>
       </div>
+      <div class="social-links text-center">
+        <a href="https://github.com/toando22" target="_blank" class="github"
+          ><i class="bi bi-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/duy-to%C3%A0n-%C4%91%E1%BB%97-a85852395/"
+          class="linkedin"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+        <a href="https://www.facebook.com/duytoan2201/"
+          ><i class="bi bi-facebook"></i
+        ></a>
+      </div>
+    </header>
 
-    </section><section id="skills" class="skills section">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Kỹ năng</h2>
-        <p>Tôi có nền tảng vững chắc về khoa học máy tính, kỹ năng lập trình đa dạng và kinh nghiệm thực tế qua nhiều dự án.</p>
-      </div><div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="skills-container">
-
-              <div class="skill-category skills-animation" data-aos="fade-up" data-aos-delay="200">
-                <div class="category-header">
-                  <h3 class="category-title">Phát triển Phần mềm</h3>
-                  <p class="category-subtitle">Ngôn ngữ, Frameworks, và Công cụ</p>
+    <main class="main">
+      <section id="hero" class="hero section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-center">
+            <div class="col-lg-6 order-2 order-lg-1">
+              <div class="hero-content">
+                <h1 data-aos="fade-up" data-aos-delay="200">
+                  Đỗ Duy Toàn
+                  <p><span class="accent-text">Lập trình viên</span></p>
+                </h1>
+                <p
+                  class="hero-description"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  Tôi là Sinh viên Công nghệ Thông tin đam mê phát triển Backend
+                  (Java/Spring) và Trí tuệ Nhân tạo (Python).
+                </p>
+                <div
+                  class="hero-actions"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <a href="#portfolio" class="btn-primary">Xem Dự án</a>
+                  <a href="#contact" class="btn-secondary">Liên hệ</a>
                 </div>
-                <div class="skills-list">
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">Java (Core, JavaFX) & Spring Boot</span>
-                      <span class="skill-percentage">90%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
+                  <div class="stat-item">
+                    <span class="stat-number">6+</span>
+                    <span class="stat-label">Dự án Nổi bật</span>
                   </div>
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">Python (AI, Big Data, ElGamal)</span>
-                      <span class="skill-percentage">85%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+                  <div class="stat-item">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Ngôn ngữ (Java, Python, C++)</span>
                   </div>
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">C/C++ (Lập trình cơ bản)</span>
-                      <span class="skill-percentage">75%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">MySQL & Hibernate/JPA</span>
-                      <span class="skill-percentage">85%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skill-category skills-animation" data-aos="fade-up" data-aos-delay="250">
-                <div class="category-header">
-                  <h3 class="category-title">Nền tảng Khoa học Máy tính</h3>
-                  <p class="category-subtitle">Các lĩnh vực chuyên sâu</p>
-                </div>
-                <div class="skills-list">
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">Cấu trúc dữ liệu & Giải thuật</span>
-                      <span class="skill-percentage">80%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">Trí tuệ Nhân tạo (AI/ML - Nhận diện khuôn mặt)</span>
-                      <span class="skill-percentage">70%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">Mã hóa & An toàn thông tin (RSA, ElGamal)</span>
-                      <span class="skill-percentage">75%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+                  <div class="stat-item">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">Kỹ năng & Công nghệ</span>
                   </div>
                 </div>
               </div>
-
             </div>
-          </div>
 
-          <div class="col-lg-4">
-            <div class="skills-sidebar">
-
-              <div class="expertise-highlight" data-aos="fade-up" data-aos-delay="350">
-                <div class="highlight-icon">
-                  <i class="bi bi-calendar-check"></i>
-                </div>
-                <h4 class="highlight-title">Số năm học tập</h4>
-                <div class="experience-number">
-                  <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
-                  <span class="experience-label">Năm</span>
-                </div>
-                <p class="highlight-description">Số năm học tập và thực hiện dự án thực tế với chuyên ngành Công nghệ Thông tin.</p>
-              </div>
-
-              <div class="technologies-section" data-aos="fade-up" data-aos-delay="400">
-                <h5 class="tech-title">Ngôn ngữ & Công nghệ chính</h5>
-                <div class="tech-stack">
-                  <div class="tech-item">
-                    <i class="bi bi-code-square"></i>
-                    <span>Java</span>
+            <div class="col-lg-6 order-1 order-lg-2">
+              <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+                <div class="image-wrapper">
+                  <img
+                    src="assets/img/profile/avatar_index.jpg"
+                    alt="Đỗ Duy Toàn - Lập trình viên Java"
+                    class="img-fluid main-image"
+                  />
+                  <div
+                    class="floating-card card-1"
+                    data-aos="fade-up"
+                    data-aos-delay="600"
+                  >
+                    <i class="bi bi-code-braces"></i>
+                    <span>Java & Spring Boot</span>
                   </div>
-                  <div class="tech-item">
-                    <i class="bi bi-braces"></i>
-                    <span>Spring Boot</span>
+                  <div
+                    class="floating-card card-2"
+                    data-aos="fade-up"
+                    data-aos-delay="700"
+                  >
+                    <i class="bi bi-robot"></i>
+                    <span>AI & Big Data</span>
                   </div>
-                  <div class="tech-item">
+                  <div
+                    class="floating-card card-3"
+                    data-aos="fade-up"
+                    data-aos-delay="800"
+                  >
                     <i class="bi bi-filetype-py"></i>
                     <span>Python</span>
                   </div>
-                  <div class="tech-item">
-                    <i class="bi bi-filetype-cpp"></i>
-                    <span>C++</span>
-                  </div>
-                  <div class="tech-item">
-                    <i class="bi bi-database"></i>
-                    <span>MySQL</span>
-                  </div>
-                  <div class="tech-item">
-                    <i class="bi bi-git"></i>
-                    <span>Git</span>
-                  </div>
                 </div>
               </div>
-
-              <div class="achievements-section" data-aos="fade-up" data-aos-delay="450">
-                <h5 class="achievements-title">Thành tựu & Dự án</h5>
-                <div class="achievement-list">
-                  <div class="achievement-item">
-                    <div class="achievement-date">2025</div>
-                    <div class="achievement-text">Chứng chỉ Big Data - Samsung (SIC)</div>
-                  </div>
-                  <div class="achievement-item">
-                    <div class="achievement-date">2025</div>
-                    <div class="achievement-text">Hoàn thành dự án AI Nhận diện Cảm xúc</div>
-                  </div>
-                  <div class="achievement-item">
-                    <div class="achievement-date">2024</div>
-                    <div class="achievement-text">Dự án Đặt lịch Khám bệnh (Nhóm trưởng)</div>
-                  </div>
-                  <div class="achievement-item">
-                    <div class="achievement-date">2024</div>
-                    <div class="achievement-text">Dự án Bán Nông sản (Quản lý dự án)</div>
-                  </div>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
-
-      </div>
-
-    </section><section id="resume" class="resume section">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Hồ sơ của tôi</h2>
-        <p>Tổng quan về quá trình học tập và kinh nghiệm thực hiện dự án của tôi.</p>
-      </div><div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-start">
-          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
-            <div class="professional-journey">
-              <div class="section-intro">
-                <div class="icon-wrapper">
-                  <i class="bi bi-briefcase-fill"></i>
-                </div>
-                <h2>Kinh nghiệm Dự án</h2>
-                <p>Các dự án thực tế đã hoàn thành trong quá trình học tập.</p>
+      </section>
+      <section id="about" class="about section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div
+                class="intro-header text-center"
+                data-aos="fade-up"
+                data-aos-delay="150"
+              >
+                <h1>Chào bạn, tôi là Đỗ Duy Toàn</h1>
+                <p class="subtitle">
+                  Lập trình viên (Java Web, AI/Data) &amp; Sinh viên năm 4
+                </p>
               </div>
 
-              <div class="experience-timeline">
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-                  <div class="timeline-dot"></div>
-                  <div class="timeline-content">
-                    <div class="position-meta">
-                      <span class="timeline-year">T6/2024 - T8/2024</span>
+              <div class="main-content-wrapper">
+                <div class="row align-items-start">
+                  <div
+                    class="col-lg-4"
+                    data-aos="fade-right"
+                    data-aos-delay="200"
+                  >
+                    <div class="profile-section">
+                      <div class="profile-image-container">
+                        <img
+                          src="assets/img/profile/index_1.jpg"
+                          class="img-fluid"
+                          alt="Đỗ Duy Toàn"
+                        />
+                      </div>
+                      <div class="profile-meta">
+                        <div class="location">
+                          <i class="bi bi-geo-alt"></i>
+                          <span>Hà Nội, Việt Nam</span>
+                        </div>
+                        <div class="status">
+                          <div class="status-indicator"></div>
+                          <span>Fresher Backend Developer</span>
+                        </div>
+                      </div>
                     </div>
-                    <h3>Trưởng nhóm / Lập trình viên Backend</h3>
-                    <h4>Dự án: Hệ thống đặt lịch khám bệnh (Booking Healthy)</h4>
-                    <p>Thiết kế CSDL (Bác sĩ, Bệnh nhân), xây dựng API, phân quyền (Spring Security), tích hợp Thymeleaf và gửi email tự động.</p>
-                    <div class="key-achievements">
-                      <span class="achievement-tag">Spring Boot</span>
-                      <span class="achievement-tag">MySQL</span>
-                      <span class="achievement-tag">Thymeleaf</span>
+                  </div>
+
+                  <div
+                    class="col-lg-8"
+                    data-aos="fade-left"
+                    data-aos-delay="250"
+                  >
+                    <div class="content-area">
+                      <div class="story-block">
+                        <p class="lead-text">
+                          Tôi là sinh viên năm 4 ngành Công nghệ Thông tin tại
+                          Đại học Công nghiệp Hà Nội. Với kinh nghiệm thực chiến
+                          qua các dự án cá nhân sử dụng Java Spring Boot, tôi
+                          mong muốn được áp dụng kiến thức vào môi trường thực
+                          tế qua vị trí Thực tập sinh Java Web.
+                        </p>
+
+                        <p>
+                          Triết lý của tôi tập trung vào mã nguồn sạch, tối ưu
+                          và khả năng mở rộng. Không chỉ giới hạn ở Java Web,
+                          tôi còn có đam mê với các giải thuật phức tạp, Trí tuệ
+                          Nhân tạo và Phân tích Dữ liệu. Mục tiêu của tôi là học
+                          hỏi quy trình làm việc chuyên nghiệp, đóng góp vào các
+                          dự án của công ty và phát triển kỹ năng lập trình.
+                        </p>
+                      </div>
+
+                      <div class="expertise-grid">
+                        <div
+                          class="expertise-item"
+                          data-aos="zoom-in"
+                          data-aos-delay="300"
+                        >
+                          <div class="expertise-icon">
+                            <i class="bi bi-server"></i>
+                          </div>
+                          <div class="expertise-content">
+                            <h4>Phát triển Backend</h4>
+                            <p>
+                              Xây dựng RESTful API, xử lý logic nghiệp vụ và bảo
+                              mật bằng Spring Boot.
+                            </p>
+                          </div>
+                        </div>
+
+                        <div
+                          class="expertise-item"
+                          data-aos="zoom-in"
+                          data-aos-delay="350"
+                        >
+                          <div class="expertise-icon">
+                            <i class="bi bi-lightbulb"></i>
+                          </div>
+                          <div class="expertise-content">
+                            <h4>AI & Data</h4>
+                            <p>
+                              Phân tích dữ liệu lớn và xây dựng mô hình AI nhận
+                              diện cảm xúc bằng Python.
+                            </p>
+                          </div>
+                        </div>
+
+                        <div
+                          class="expertise-item"
+                          data-aos="zoom-in"
+                          data-aos-delay="400"
+                        >
+                          <div class="expertise-icon">
+                            <i class="bi bi-journal-code"></i>
+                          </div>
+                          <div class="expertise-content">
+                            <h4>Giải thuật & Bảo mật</h4>
+                            <p>
+                              Nghiên cứu Cấu trúc dữ liệu & Giải thuật, áp dụng
+                              vào các bài toán mã hóa (RSA, ElGamal).
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="philosophy-quote"
+                        data-aos="fade-up"
+                        data-aos-delay="450"
+                      >
+                        <div class="quote-mark">"</div>
+                        <p>
+                          Học hỏi không ngừng là chìa khóa để phát triển trong
+                          ngành Công nghệ Thông tin.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="350">
-                  <div class="timeline-dot"></div>
-                  <div class="timeline-content">
-                    <div class="position-meta">
-                      <span class="timeline-year">T10/2024 - T2/2025</span>
+              <div
+                class="bottom-section"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <div class="collaboration-text">
+                      <h3>Hãy cùng nhau xây dựng những sản phẩm ý nghĩa</h3>
+                      <p>
+                        Tôi luôn sẵn sàng trao đổi về các cơ hội thực tập hoặc
+                        các dự án thú vị.
+                      </p>
                     </div>
-                    <h3>Quản lý dự án / Lập trình viên Backend</h3>
-                    <h4>Dự án: Website bán nông sản (Greeny Farm)</h4>
-                    <p>Xây dựng hệ thống TMĐT (Sản phẩm, Giỏ hàng, Đặt hàng) theo mô hình MVC. Viết REST API cho giỏ hàng và quản lý tiến độ nhóm.</p>
                   </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-                  <div class="timeline-dot"></div>
-                  <div class="timeline-content">
-                    <div class="position-meta">
-                      <span class="timeline-year">T6/2025 - T10/2025</span>
+                  <div class="col-lg-6">
+                    <div class="action-buttons">
+                      <a href="#resume" class="btn-custom primary"
+                        >Xem Hồ sơ CV</a
+                      >
+                      <a href="#contact" class="btn-custom secondary"
+                        >Liên hệ</a
+                      >
                     </div>
-                    <h3>Lập trình viên chính</h3>
-                    <h4>Dự án: App Quản lý Chi tiêu (SmartFinance)</h4>
-                    <p>Xây dựng ứng dụng Android (Java) quản lý thu chi cá nhân. Sử dụng SQLite để lưu trữ dữ liệu cục bộ và áp dụng Material Design.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
-            <div class="education-skills">
-              <div class="section-intro">
-                <div class="icon-wrapper">
-                  <i class="bi bi-mortarboard-fill"></i>
+        </div>
+      </section>
+      <section id="skills" class="skills section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Kỹ năng</h2>
+          <p>
+            Tôi có nền tảng vững chắc về khoa học máy tính, kỹ năng lập trình đa
+            dạng và kinh nghiệm thực tế qua nhiều dự án.
+          </p>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="skills-container">
+                <div
+                  class="skill-category skills-animation"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <div class="category-header">
+                    <h3 class="category-title">Phát triển Phần mềm</h3>
+                    <p class="category-subtitle">
+                      Ngôn ngữ, Frameworks, và Công cụ
+                    </p>
+                  </div>
+                  <div class="skills-list">
+                    <div class="skill-row">
+                      <div class="skill-info">
+                        <span class="skill-name"
+                          >Java (Core, JavaFX) & Spring Boot</span
+                        >
+                        <span class="skill-percentage">90%</span>
+                      </div>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="90"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="skill-row">
+                      <div class="skill-info">
+                        <span class="skill-name"
+                          >Python (AI, Big Data, ElGamal)</span
+                        >
+                        <span class="skill-percentage">85%</span>
+                      </div>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="85"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="skill-row">
+                      <div class="skill-info">
+                        <span class="skill-name">C/C++ (Lập trình cơ bản)</span>
+                        <span class="skill-percentage">75%</span>
+                      </div>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="75"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="skill-row">
+                      <div class="skill-info">
+                        <span class="skill-name">MySQL & Hibernate/JPA</span>
+                        <span class="skill-percentage">85%</span>
+                      </div>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="85"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <h2>Học vấn &amp; Hoạt động</h2>
-                <p>Quá trình đào tạo chính quy và các hoạt động ngoại khóa.</p>
+
+                <div
+                  class="skill-category skills-animation"
+                  data-aos="fade-up"
+                  data-aos-delay="250"
+                >
+                  <div class="category-header">
+                    <h3 class="category-title">Nền tảng Khoa học Máy tính</h3>
+                    <p class="category-subtitle">Các lĩnh vực chuyên sâu</p>
+                  </div>
+                  <div class="skills-list">
+                    <div class="skill-row">
+                      <div class="skill-info">
+                        <span class="skill-name"
+                          >Cấu trúc dữ liệu & Giải thuật</span
+                        >
+                        <span class="skill-percentage">80%</span>
+                      </div>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="80"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="skill-row">
+                      <div class="skill-info">
+                        <span class="skill-name"
+                          >Trí tuệ Nhân tạo (AI/ML - Nhận diện khuôn mặt)</span
+                        >
+                        <span class="skill-percentage">70%</span>
+                      </div>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="70"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="skill-row">
+                      <div class="skill-info">
+                        <span class="skill-name"
+                          >Mã hóa & An toàn thông tin (RSA, ElGamal)</span
+                        >
+                        <span class="skill-percentage">75%</span>
+                      </div>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="75"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
 
-              <div class="education-grid">
-                <div class="education-card primary" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="education-header">
-                    <div class="degree-icon">
-                      <i class="bi bi-award"></i>
-                    </div>
-                    <div class="degree-info">
-                      <h3>Cử nhân Công nghệ Thông tin</h3>
-                      <p class="institution">Đại học Công nghiệp Hà Nội</p>
-                      <span class="graduation-year">2022 - 2026</span>
-                    </div>
+            <div class="col-lg-4">
+              <div class="skills-sidebar">
+                <div
+                  class="expertise-highlight"
+                  data-aos="fade-up"
+                  data-aos-delay="350"
+                >
+                  <div class="highlight-icon">
+                    <i class="bi bi-calendar-check"></i>
                   </div>
-                  <div class="education-details">
-                    <p>Chuyên ngành CNTT, tập trung vào phát triển phần mềm. Nắm vững kiến thức nền tảng về Cấu trúc dữ liệu & Giải thuật, Lập trình (C++, Python, Java).</p>
-                    <div class="honors">
-                      <span class="honor-badge">GPA: 2.9/4.0</span>
+                  <h4 class="highlight-title">Số năm học tập</h4>
+                  <div class="experience-number">
+                    <span
+                      data-purecounter-start="0"
+                      data-purecounter-end="4"
+                      data-purecounter-duration="1"
+                      class="purecounter"
+                    ></span>
+                    <span class="experience-label">Năm</span>
+                  </div>
+                  <p class="highlight-description">
+                    Số năm học tập và thực hiện dự án thực tế với chuyên ngành
+                    Công nghệ Thông tin.
+                  </p>
+                </div>
+
+                <div
+                  class="technologies-section"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <h5 class="tech-title">Ngôn ngữ & Công nghệ chính</h5>
+                  <div class="tech-stack">
+                    <div class="tech-item">
+                      <i class="bi bi-code-square"></i>
+                      <span>Java</span>
+                    </div>
+                    <div class="tech-item">
+                      <i class="bi bi-braces"></i>
+                      <span>Spring Boot</span>
+                    </div>
+                    <div class="tech-item">
+                      <i class="bi bi-filetype-py"></i>
+                      <span>Python</span>
+                    </div>
+                    <div class="tech-item">
+                      <i class="bi bi-filetype-cpp"></i>
+                      <span>C++</span>
+                    </div>
+                    <div class="tech-item">
+                      <i class="bi bi-database"></i>
+                      <span>MySQL</span>
+                    </div>
+                    <div class="tech-item">
+                      <i class="bi bi-git"></i>
+                      <span>Git</span>
                     </div>
                   </div>
                 </div>
 
-                <div class="education-card" data-aos="zoom-in" data-aos-delay="350">
-                  <div class="education-header">
-                    <div class="degree-icon">
-                      <i class="bi bi-people"></i>
+                <div
+                  class="achievements-section"
+                  data-aos="fade-up"
+                  data-aos-delay="450"
+                >
+                  <h5 class="achievements-title">Thành tựu & Dự án</h5>
+                  <div class="achievement-list">
+                    <div class="achievement-item">
+                      <div class="achievement-date">2025</div>
+                      <div class="achievement-text">
+                        Chứng chỉ Big Data - Samsung (SIC)
+                      </div>
                     </div>
-                    <div class="degree-info">
-                      <h3>Hoạt động Câu lạc bộ</h3>
-                      <p class="institution">Thành viên CLB HIT</p>
-                      <span class="graduation-year">2022 - 2023</span>
+                    <div class="achievement-item">
+                      <div class="achievement-date">2025</div>
+                      <div class="achievement-text">
+                        Hoàn thành dự án AI Nhận diện Cảm xúc
+                      </div>
                     </div>
-                  </div>
-                  <div class="education-details">
-                    <p>Tham gia các khóa học lập trình (Java, C#) và trao đổi kiến thức chuyên ngành, xây dựng các dự án sát với thực tế.</p>
-                  </div>
-                </div>
-
-                <div class="certification-section" data-aos="fade-up" data-aos-delay="400">
-                  <h4>Chứng chỉ Chuyên môn</h4>
-                  <div class="certifications">
-                    <div class="cert-item">
-                      <i class="bi bi-patch-check"></i>
-                      <div class="cert-details">
-                        <span class="cert-name">Chứng chỉ Big Data</span>
-                        <span class="cert-provider">Samsung Innovation Campus (SIC) • 2025</span>
+                    <div class="achievement-item">
+                      <div class="achievement-date">2024</div>
+                      <div class="achievement-text">
+                        Dự án Đặt lịch Khám bệnh (Nhóm trưởng)
+                      </div>
+                    </div>
+                    <div class="achievement-item">
+                      <div class="achievement-date">2024</div>
+                      <div class="achievement-text">
+                        Dự án Bán Nông sản (Quản lý dự án)
                       </div>
                     </div>
                   </div>
@@ -528,369 +626,740 @@
             </div>
           </div>
         </div>
-
-      </div>
-
-    </section><section id="portfolio" class="portfolio section">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Dự án của tôi</h2>
-        <p>Đây là các dự án nổi bật tôi đã thực hiện, bao gồm Web App, AI, Big Data và ứng dụng Desktop.</p>
-      </div><div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <div class="filters-wrapper" data-aos="fade-up" data-aos-delay="200">
-            <ul class="portfolio-filters isotope-filters">
-              <li data-filter="*" class="filter-active">Tất cả</li>
-              <li data-filter=".filter-web">Web App</li>
-              <li data-filter=".filter-ai-data">AI & Data</li>
-              <li data-filter=".filter-desktop-mobile">Desktop & Mobile</li>
-            </ul>
-          </div>
-
-          <div class="row gy-5 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="300">
-
-            <div class="col-lg-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-3.webp" class="img-fluid" alt="Booking Healthy" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox action-btn preview-btn" title="Booking Healthy"><i class="bi bi-eye"></i></a>
-                      <a href="du-an-booking.html" class="action-btn details-btn" title="View Project"><i class="bi bi-arrow-up-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <div class="portfolio-meta">
-                    <span class="portfolio-category">Web Application</span>
-                    <span class="portfolio-year">2024</span>
-                  </div>
-                  <h3 class="portfolio-title">Hệ thống Đặt lịch Khám bệnh (Booking Healthy)</h3>
-                  <p class="portfolio-description">Dự án nhóm (vai trò Trưởng nhóm) xây dựng hệ thống đặt lịch khám. Sử dụng Spring Boot (API & Security), MySQL và Thymeleaf.</p>
-                </div>
-              </div>
-            </div><div class="col-lg-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/gioithieu.png" class="img-fluid" alt="Greeny Farm" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-7.webp" class="glightbox action-btn preview-btn" title="Greeny Farm"><i class="bi bi-eye"></i></a>
-                      <a href="du-an-nong-san.html" class="action-btn details-btn" title="View Project"><i class="bi bi-arrow-up-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <div class="portfolio-meta">
-                    <span class="portfolio-category">Web Application</span>
-                    <span class="portfolio-year">2024</span>
-                  </div>
-                  <h3 class="portfolio-title">Website Bán Nông sản (Greeny Farm)</h3>
-                  <p class="portfolio-description">Website TMĐT (vai trò PM & Backend) với các module Giỏ hàng, Đặt hàng. Công nghệ: Spring Boot, JPA, Thymeleaf và REST API.</p>
-                </div>
-              </div>
-            </div><div class="col-lg-6 portfolio-item isotope-item filter-desktop-mobile">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-portrait-3.webp" class="img-fluid" alt="SmartFinance" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-portrait-3.webp" class="glightbox action-btn preview-btn" title="SmartFinance"><i class="bi bi-eye"></i></a>
-                      <a href="du-an-quan-ly-chi-tieu.html" class="action-btn details-btn" title="View Project"><i class="bi bi-arrow-up-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <div class="portfolio-meta">
-                    <span class="portfolio-category">Mobile App</span>
-                    <span class="portfolio-year">2025</span>
-                  </div>
-                  <h3 class="portfolio-title">App Quản lý Chi tiêu (SmartFinance)</h3>
-                  <p class="portfolio-description">Ứng dụng Android (Java) giúp quản lý thu chi cá nhân. Sử dụng SQLite để lưu trữ cục bộ và giao diện Material Design.</p>
-                </div>
-              </div>
-            </div><div class="col-lg-6 portfolio-item isotope-item filter-ai-data">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/kq1.png" class="img-fluid" alt="AI Emotion Recognition" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-9.webp" class="glightbox action-btn preview-btn" title="AI Emotion Recognition"><i class="bi bi-eye"></i></a>
-                      <a href="du-an-ai-cam-xuc.html" class="action-btn details-btn" title="View Project"><i class="bi bi-arrow-up-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <div class="portfolio-meta">
-                    <span class="portfolio-category">AI / Machine Learning</span>
-                    <span class="portfolio-year">2025</span>
-                  </div>
-                  <h3 class="portfolio-title">AI Nhận diện Cảm xúc Khuôn mặt</h3>
-                  <p class="portfolio-description">Xây dựng mô hình AI (Python, OpenCV, TensorFlow) để phân tích và nhận diện 7 loại cảm xúc cơ bản của con người qua webcam theo thời gian thực.</p>
-                </div>
-              </div>
-            </div><div class="col-lg-6 portfolio-item isotope-item filter-ai-data filter-web">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt="Big Data Analysis" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-11.webp" class="glightbox action-btn preview-btn" title="Big Data Analysis"><i class="bi bi-eye"></i></a>
-                      <a href="du-an-bigdata.html" class="action-btn details-btn" title="View Project"><i class="bi bi-arrow-up-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <div class="portfolio-meta">
-                    <span class="portfolio-category">Big Data / Web</span>
-                    <span class="portfolio-year">2025</span>
-                  </div>
-                  <h3 class="portfolio-title">Phân tích Hành vi Khách hàng (Big Data)</h3>
-                  <p class="portfolio-description">Dự án (từ khóa học Samsung SIC) sử dụng Python (Pandas) để phân tích dữ liệu lớn, và xây dựng giao diện web (Thymeleaf/Flask) để trực quan hóa.</p>
-                </div>
-              </div>
-            </div><div class="col-lg-6 portfolio-item isotope-item filter-desktop-mobile">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/mahoa_1.png" class="img-fluid" alt="RSA Encryption App" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-12.webp" class="glightbox action-btn preview-btn" title="RSA Encryption App"><i class="bi bi-eye"></i></a>
-                      <a href="du-an-ma-hoa.html" class="action-btn details-btn" title="View Project"><i class="bi bi-arrow-up-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <div class="portfolio-meta">
-                    <span class="portfolio-category">Desktop App / Security</span>
-                    <span class="portfolio-year">2024</span>
-                  </div>
-                  <h3 class="portfolio-title">Ứng dụng Mã hóa RSA & ElGamal</h3>
-                  <p class="portfolio-description">Phát triển ứng dụng Desktop (Java, JavaFX) mô phỏng giải thuật mã hóa bất đối xứng RSA. Đồng thời nghiên cứu và triển khai giải thuật ElGamal bằng Python.</p>
-                </div>
-              </div>
-            </div></div></div>
-
-      </div>
-
-    </section><section id="services" class="services section">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Lĩnh vực Chuyên môn</h2>
-        <p>Các kỹ năng và lĩnh vực chính mà tôi có thể đóng góp.</p>
-      </div><div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-5">
-
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-server"></i>
-              </div>
-              <div class="service-content">
-                <h3><a href="service-details.html">Phát triển Backend (Java)</a></h3>
-                <p>Xây dựng logic nghiệp vụ, API, và bảo mật hệ thống bằng Java Spring Boot – thế mạnh chính của tôi.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="250">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-lightbulb"></i>
-              </div>
-              <div class="service-content">
-                <h3><a href="service-details.html">AI & Phân tích Dữ liệu (Python)</a></h3>
-                <p>Xây dựng mô hình AI nhận diện cảm xúc (OpenCV, TensorFlow) và phân tích hành vi khách hàng (Big Data, Pandas).</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="300">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-display"></i>
-              </div>
-              <div class="service-content">
-                <h3><a href="service-details.html">Phát triển Ứng dụng (Full-stack)</a></h3>
-                <p>Xây dựng ứng dụng Web (Spring, Thymeleaf) và Desktop (JavaFX) hoàn chỉnh, từ giao diện đến cơ sở dữ liệu.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="350">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-shield-lock"></i>
-              </div>
-              <div class="service-content">
-                <h3><a href="service-details.html">Thuật toán & Cơ sở dữ liệu</a></h3>
-                <p>Thiết kế CSDL (MySQL) và áp dụng các giải thuật (Cấu trúc dữ liệu, Mã hóa RSA, ElGamal) vào ứng dụng thực tế.</p>
-              </div>
-            </div>
-          </div>
-
+      </section>
+      <section id="resume" class="resume section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Hồ sơ của tôi</h2>
+          <p>
+            Tổng quan về quá trình học tập và kinh nghiệm thực hiện dự án của
+            tôi.
+          </p>
         </div>
-
-      </div>
-
-    </section><section id="contact" class="contact section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Liên hệ</h2>
-        <p>Sẵn sàng trao đổi về các cơ hội thực tập hoặc các dự án thú vị. Hãy kết nối với tôi!</p>
-      </div><div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-5">
-
-            <div class="info-item">
-              <div class="info-icon">
-                <i class="bi bi-chat-dots"></i>
-              </div>
-              <div class="info-content">
-                <h4>Hãy kết nối</h4>
-                <p>Tôi ở đây để thảo luận về tầm nhìn của bạn và cách chúng ta có thể làm việc cùng nhau.</p>
-              </div>
-            </div>
-
-            <div class="contact-details">
-
-              <div class="detail-item">
-                <div class="detail-icon">
-                  <i class="bi bi-envelope-open"></i>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-start">
+            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+              <div class="professional-journey">
+                <div class="section-intro">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-briefcase-fill"></i>
+                  </div>
+                  <h2>Kinh nghiệm Dự án</h2>
+                  <p>
+                    Các dự án thực tế đã hoàn thành trong quá trình học tập.
+                  </p>
                 </div>
-                <div class="detail-content">
-                  <span class="detail-label">Email</span>
-                  <span class="detail-value">doduytoan2201@gmail.com</span>
-                </div>
-              </div>
 
-              <div class="detail-item">
-                <div class="detail-icon">
-                  <i class="bi bi-telephone-outbound"></i>
-                </div>
-                <div class="detail-content">
-                  <span class="detail-label">Điện thoại</span>
-                  <span class="detail-value">0358 493 974</span>
-                </div>
-              </div>
-
-              <div class="detail-item">
-                <div class="detail-icon">
-                  <i class="bi bi-geo-alt-fill"></i>
-                </div>
-                <div class="detail-content">
-                  <span class="detail-label">Địa chỉ</span>
-                  <span class="detail-value">Bắc Từ Liêm, Hà Nội</span>
-                </div>
-              </div>
-
-              <div class="detail-item">
-                <div class="detail-icon">
-                  <i class="bi bi-github"></i>
-                </div>
-                <div class="detail-content">
-                  <span class="detail-label">GitHub</span>
-                  <span class="detail-value">github.com/toando22</span>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-7">
-            <div class="form-wrapper">
-              <div class="form-header">
-                <h3>Gửi tin nhắn cho tôi</h3>
-              </div>
-
-              <form action="https://formspree.io/f/xrborkon" method="post" >
-
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label>Họ và Tên</label>
-                      <input type="text" name="name" required="">
+                <div class="experience-timeline">
+                  <div
+                    class="timeline-item"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  >
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="position-meta">
+                        <span class="timeline-year">T4/2025 - T8/2025</span>
+                      </div>
+                      <h3>Lập trình viên chính</h3>
+                      <h4>
+                        Dự án: Hệ thống đặt lịch khám bệnh (Booking Healthy)
+                      </h4>
+                      <p>
+                        Thiết kế CSDL (Bác sĩ, Bệnh nhân), xây dựng API, phân
+                        quyền (Spring Security), tích hợp Thymeleaf và gửi email
+                        tự động.
+                      </p>
+                      <div class="key-achievements">
+                        <span class="achievement-tag">Spring Boot</span>
+                        <span class="achievement-tag">MySQL</span>
+                        <span class="achievement-tag">Thymeleaf</span>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label>Địa chỉ Email</label>
-                      <input type="email" name="email" required="">
+
+                  <div
+                    class="timeline-item"
+                    data-aos="fade-up"
+                    data-aos-delay="350"
+                  >
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="position-meta">
+                        <span class="timeline-year">T10/2024 - T2/2025</span>
+                      </div>
+                      <h3>Quản lý dự án / Lập trình viên Backend</h3>
+                      <h4>Dự án: Website bán nông sản (Greeny Farm)</h4>
+                      <p>
+                        Xây dựng hệ thống TMĐT (Sản phẩm, Giỏ hàng, Đặt hàng)
+                        theo mô hình MVC. Viết REST API cho giỏ hàng và quản lý
+                        tiến độ nhóm.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="timeline-item"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="position-meta">
+                        <span class="timeline-year">T6/2025 - T10/2025</span>
+                      </div>
+                      <h3>Lập trình viên chính</h3>
+                      <h4>Dự án: App Quản lý Chi tiêu (SmartFinance)</h4>
+                      <p>
+                        Xây dựng ứng dụng Android (Java) quản lý thu chi cá
+                        nhân. Sử dụng SQLite để lưu trữ dữ liệu cục bộ và áp
+                        dụng Material Design.
+                      </p>
                     </div>
                   </div>
                 </div>
-
-                <div class="form-group">
-                  <label>Chủ đề</label>
-                  <input type="text" name="subject" required="">
-                </div>
-
-                <div class="form-group">
-                  <label for="projectMessage">Nội dung tin nhắn</label>
-                  <textarea name="message" id="projectMessage" rows="5" required=""></textarea>
-                </div>
-
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-
-                <button type="submit" class="submit-btn">
-                  <span>Gửi tin nhắn</span>
-                  <i class="bi bi-arrow-right"></i>
-                </button>
-
-              </form>
-
+              </div>
             </div>
 
-          </div>
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+              <div class="education-skills">
+                <div class="section-intro">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-mortarboard-fill"></i>
+                  </div>
+                  <h2>Học vấn &amp; Hoạt động</h2>
+                  <p>
+                    Quá trình đào tạo chính quy và các hoạt động ngoại khóa.
+                  </p>
+                </div>
 
+                <div class="education-grid">
+                  <div
+                    class="education-card primary"
+                    data-aos="zoom-in"
+                    data-aos-delay="300"
+                  >
+                    <div class="education-header">
+                      <div class="degree-icon">
+                        <i class="bi bi-award"></i>
+                      </div>
+                      <div class="degree-info">
+                        <h3>Cử nhân Công nghệ Thông tin</h3>
+                        <p class="institution">Đại học Công nghiệp Hà Nội</p>
+                        <span class="graduation-year">2022 - 2026</span>
+                      </div>
+                    </div>
+                    <div class="education-details">
+                      <p>
+                        Chuyên ngành CNTT, tập trung vào phát triển phần mềm.
+                        Nắm vững kiến thức nền tảng về Cấu trúc dữ liệu & Giải
+                        thuật, Lập trình (C++, Python, Java).
+                      </p>
+                      <div class="honors">
+                        <span class="honor-badge">GPA: 3.0/4.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="education-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="350"
+                  >
+                    <div class="education-header">
+                      <div class="degree-icon">
+                        <i class="bi bi-people"></i>
+                      </div>
+                      <div class="degree-info">
+                        <h3>Hoạt động Câu lạc bộ</h3>
+                        <p class="institution">Thành viên CLB HIT</p>
+                        <span class="graduation-year">2022 - 2023</span>
+                      </div>
+                    </div>
+                    <div class="education-details">
+                      <p>
+                        Tham gia các khóa học lập trình (Java, C#) và trao đổi
+                        kiến thức chuyên ngành, xây dựng các dự án sát với thực
+                        tế.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="certification-section"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
+                    <h4>Chứng chỉ Chuyên môn</h4>
+                    <div class="certifications">
+                      <div class="cert-item">
+                        <i class="bi bi-patch-check"></i>
+                        <div class="cert-details">
+                          <span class="cert-name">Chứng chỉ Big Data</span>
+                          <span class="cert-provider"
+                            >Samsung Innovation Campus (SIC) • 2025</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+      <section id="portfolio" class="portfolio section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Dự án của tôi</h2>
+          <p>
+            Đây là các dự án nổi bật tôi đã thực hiện, bao gồm Web App, AI, Big
+            Data và ứng dụng Desktop.
+          </p>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <div
+              class="filters-wrapper"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <ul class="portfolio-filters isotope-filters">
+                <li data-filter="*" class="filter-active">Tất cả</li>
+                <li data-filter=".filter-web">Web App</li>
+                <li data-filter=".filter-ai-data">AI & Data</li>
+                <li data-filter=".filter-desktop-mobile">Desktop & Mobile</li>
+              </ul>
+            </div>
 
-    </section></main>
+            <div
+              class="row gy-5 portfolio-container isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="col-lg-6 portfolio-item isotope-item filter-web">
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="assets/img/portfolio/bookinghealthy_1.png"
+                      class="img-fluid"
+                      alt="Booking Healthy"
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a
+                          href="assets/img/portfolio/portfolio-3.webp"
+                          class="glightbox action-btn preview-btn"
+                          title="Booking Healthy"
+                          ><i class="bi bi-eye"></i
+                        ></a>
+                        <a
+                          href="du-an-booking.html"
+                          class="action-btn details-btn"
+                          title="View Project"
+                          ><i class="bi bi-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta">
+                      <span class="portfolio-category">Web Application</span>
+                      <span class="portfolio-year">2024</span>
+                    </div>
+                    <h3 class="portfolio-title">
+                      Hệ thống Đặt lịch Khám bệnh (Booking Healthy)
+                    </h3>
+                    <p class="portfolio-description">
+                      Dự án nhóm (vai trò Trưởng nhóm) xây dựng hệ thống đặt
+                      lịch khám. Sử dụng Spring Boot (API & Security), MySQL và
+                      Thymeleaf.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 portfolio-item isotope-item filter-web">
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="assets/img/portfolio/gioithieu.png"
+                      class="img-fluid"
+                      alt="Greeny Farm"
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a
+                          href="assets/img/portfolio/portfolio-7.webp"
+                          class="glightbox action-btn preview-btn"
+                          title="Greeny Farm"
+                          ><i class="bi bi-eye"></i
+                        ></a>
+                        <a
+                          href="du-an-nong-san.html"
+                          class="action-btn details-btn"
+                          title="View Project"
+                          ><i class="bi bi-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta">
+                      <span class="portfolio-category">Web Application</span>
+                      <span class="portfolio-year">2024</span>
+                    </div>
+                    <h3 class="portfolio-title">
+                      Website Bán Nông sản (Greeny Farm)
+                    </h3>
+                    <p class="portfolio-description">
+                      Website TMĐT (vai trò PM & Backend) với các module Giỏ
+                      hàng, Đặt hàng. Công nghệ: Spring Boot, JPA, Thymeleaf và
+                      REST API.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-6 portfolio-item isotope-item filter-desktop-mobile"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="assets/img/portfolio/portfolio-portrait-3.webp"
+                      class="img-fluid"
+                      alt="SmartFinance"
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a
+                          href="assets/img/portfolio/portfolio-portrait-3.webp"
+                          class="glightbox action-btn preview-btn"
+                          title="SmartFinance"
+                          ><i class="bi bi-eye"></i
+                        ></a>
+                        <a
+                          href="du-an-quan-ly-chi-tieu.html"
+                          class="action-btn details-btn"
+                          title="View Project"
+                          ><i class="bi bi-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta">
+                      <span class="portfolio-category">Mobile App</span>
+                      <span class="portfolio-year">2025</span>
+                    </div>
+                    <h3 class="portfolio-title">
+                      App Quản lý Chi tiêu (SmartFinance)
+                    </h3>
+                    <p class="portfolio-description">
+                      Ứng dụng Android (Java) giúp quản lý thu chi cá nhân. Sử
+                      dụng SQLite để lưu trữ cục bộ và giao diện Material
+                      Design.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 portfolio-item isotope-item filter-ai-data">
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="assets/img/portfolio/kq1.png"
+                      class="img-fluid"
+                      alt="AI Emotion Recognition"
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a
+                          href="assets/img/portfolio/portfolio-9.webp"
+                          class="glightbox action-btn preview-btn"
+                          title="AI Emotion Recognition"
+                          ><i class="bi bi-eye"></i
+                        ></a>
+                        <a
+                          href="du-an-ai-cam-xuc.html"
+                          class="action-btn details-btn"
+                          title="View Project"
+                          ><i class="bi bi-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta">
+                      <span class="portfolio-category"
+                        >AI / Machine Learning</span
+                      >
+                      <span class="portfolio-year">2025</span>
+                    </div>
+                    <h3 class="portfolio-title">
+                      AI Nhận diện Cảm xúc Khuôn mặt
+                    </h3>
+                    <p class="portfolio-description">
+                      Xây dựng mô hình AI (Python, OpenCV, TensorFlow) để phân
+                      tích và nhận diện 7 loại cảm xúc cơ bản của con người qua
+                      webcam theo thời gian thực.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-6 portfolio-item isotope-item filter-ai-data filter-web"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="assets/img/portfolio/portfolio-11.webp"
+                      class="img-fluid"
+                      alt="Big Data Analysis"
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a
+                          href="assets/img/portfolio/portfolio-11.webp"
+                          class="glightbox action-btn preview-btn"
+                          title="Big Data Analysis"
+                          ><i class="bi bi-eye"></i
+                        ></a>
+                        <a
+                          href="du-an-bigdata.html"
+                          class="action-btn details-btn"
+                          title="View Project"
+                          ><i class="bi bi-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta">
+                      <span class="portfolio-category">Big Data / Web</span>
+                      <span class="portfolio-year">2025</span>
+                    </div>
+                    <h3 class="portfolio-title">
+                      Phân tích Hành vi Khách hàng (Big Data)
+                    </h3>
+                    <p class="portfolio-description">
+                      Dự án (từ khóa học Samsung SIC) sử dụng Python (Pandas) để
+                      phân tích dữ liệu lớn, và xây dựng giao diện web
+                      (Thymeleaf/Flask) để trực quan hóa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-6 portfolio-item isotope-item filter-desktop-mobile"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="assets/img/portfolio/mahoa_1.png"
+                      class="img-fluid"
+                      alt="RSA Encryption App"
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a
+                          href="assets/img/portfolio/portfolio-12.webp"
+                          class="glightbox action-btn preview-btn"
+                          title="RSA Encryption App"
+                          ><i class="bi bi-eye"></i
+                        ></a>
+                        <a
+                          href="du-an-ma-hoa.html"
+                          class="action-btn details-btn"
+                          title="View Project"
+                          ><i class="bi bi-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta">
+                      <span class="portfolio-category"
+                        >Desktop App / Security</span
+                      >
+                      <span class="portfolio-year">2024</span>
+                    </div>
+                    <h3 class="portfolio-title">
+                      Ứng dụng Mã hóa RSA & ElGamal
+                    </h3>
+                    <p class="portfolio-description">
+                      Phát triển ứng dụng Desktop (Java, JavaFX) mô phỏng giải
+                      thuật mã hóa bất đối xứng RSA. Đồng thời nghiên cứu và
+                      triển khai giải thuật ElGamal bằng Python.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="services section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Lĩnh vực Chuyên môn</h2>
+          <p>Các kỹ năng và lĩnh vực chính mà tôi có thể đóng góp.</p>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-5">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-server"></i>
+                </div>
+                <div class="service-content">
+                  <h3>
+                    <a href="service-details.html">Phát triển Backend (Java)</a>
+                  </h3>
+                  <p>
+                    Xây dựng logic nghiệp vụ, API, và bảo mật hệ thống bằng Java
+                    Spring Boot – thế mạnh chính của tôi.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-  <footer id="footer" class="footer light-background">
-    <div class="container">
-      <h3 class="sitename">Đỗ Duy Toàn</h3>
-      <p>Sinh viên năm 4 ngành CNTT tại Đại học Công nghiệp Hà Nội, tìm kiếm cơ hội thực tập Java Web & AI.</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://github.com/toando22" target="_blank"><i class="bi bi-github"></i></a>
-        <a href="#"><i class="bi bi-linkedin"></i></a>
-        <a href="#"><i class="bi bi-facebook"></i></a>
-      </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="250">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-lightbulb"></i>
+                </div>
+                <div class="service-content">
+                  <h3>
+                    <a href="service-details.html"
+                      >AI & Phân tích Dữ liệu (Python)</a
+                    >
+                  </h3>
+                  <p>
+                    Xây dựng mô hình AI nhận diện cảm xúc (OpenCV, TensorFlow)
+                    và phân tích hành vi khách hàng (Big Data, Pandas).
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="300">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-display"></i>
+                </div>
+                <div class="service-content">
+                  <h3>
+                    <a href="service-details.html"
+                      >Phát triển Ứng dụng (Full-stack)</a
+                    >
+                  </h3>
+                  <p>
+                    Xây dựng ứng dụng Web (Spring, Thymeleaf) và Desktop
+                    (JavaFX) hoàn chỉnh, từ giao diện đến cơ sở dữ liệu.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="350">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-shield-lock"></i>
+                </div>
+                <div class="service-content">
+                  <h3>
+                    <a href="service-details.html"
+                      >Thuật toán & Cơ sở dữ liệu</a
+                    >
+                  </h3>
+                  <p>
+                    Thiết kế CSDL (MySQL) và áp dụng các giải thuật (Cấu trúc dữ
+                    liệu, Mã hóa RSA, ElGamal) vào ứng dụng thực tế.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Liên hệ</h2>
+          <p>
+            Sẵn sàng trao đổi về các cơ hội thực tập hoặc các dự án thú vị. Hãy
+            kết nối với tôi!
+          </p>
+        </div>
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-5">
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="bi bi-chat-dots"></i>
+                </div>
+                <div class="info-content">
+                  <h4>Hãy kết nối</h4>
+                  <p>
+                    Tôi ở đây để thảo luận về tầm nhìn của bạn và cách chúng ta
+                    có thể làm việc cùng nhau.
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-details">
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="bi bi-envelope-open"></i>
+                  </div>
+                  <div class="detail-content">
+                    <span class="detail-label">Email</span>
+                    <span class="detail-value">doduytoan2201@gmail.com</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="bi bi-telephone-outbound"></i>
+                  </div>
+                  <div class="detail-content">
+                    <span class="detail-label">Điện thoại</span>
+                    <span class="detail-value">0985 22 01 04</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="bi bi-geo-alt-fill"></i>
+                  </div>
+                  <div class="detail-content">
+                    <span class="detail-label">Địa chỉ</span>
+                    <span class="detail-value">Bắc Từ Liêm, Hà Nội</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="bi bi-github"></i>
+                  </div>
+                  <div class="detail-content">
+                    <span class="detail-label">GitHub</span>
+                    <span class="detail-value">github.com/toando22</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="form-wrapper">
+                <div class="form-header">
+                  <h3>Gửi tin nhắn cho tôi</h3>
+                </div>
+
+                <form action="https://formspree.io/f/xrborkon" method="post">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Họ và Tên</label>
+                        <input type="text" name="name" required="" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Địa chỉ Email</label>
+                        <input type="email" name="email" required="" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Chủ đề</label>
+                    <input type="text" name="subject" required="" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="projectMessage">Nội dung tin nhắn</label>
+                    <textarea
+                      name="message"
+                      id="projectMessage"
+                      rows="5"
+                      required=""
+                    ></textarea>
+                  </div>
+
+                  <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Your message has been sent. Thank you!
+                    </div>
+                  </div>
+
+                  <button type="submit" class="submit-btn">
+                    <span>Gửi tin nhắn</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer light-background">
       <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Đỗ Duy Toàn</strong> <span>All Rights Reserved</span>
+        <h3 class="sitename">Đỗ Duy Toàn</h3>
+        <p>
+          Sinh viên năm 4 ngành CNTT tại Đại học Công nghiệp Hà Nội, Fresher
+          Backend Developer
+        </p>
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://github.com/toando22" target="_blank"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
         </div>
-        <div class="credits">
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <div class="container">
+          <div class="copyright">
+            <span>Copyright</span>
+            <strong class="px-1 sitename">Đỗ Duy Toàn</strong>
+            <span>All Rights Reserved</span>
+          </div>
+          <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/">Đỗ Duy Toàn</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <div id="preloader"></div>
+    <div id="preloader"></div>
 
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
