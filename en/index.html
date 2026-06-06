@@ -1,527 +1,672 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Portfolio - Do Duy Toan</title>
+    <meta
+      name="description"
+      content="Personal portfolio for Do Duy Toan - Java Web, AI, Big Data Developer. Projects and skills."
+    />
+    <meta
+      name="keywords"
+      content="Do Duy Toan, Java Developer, Spring Boot, Python, AI, Big Data, Portfolio, Developer"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio - Do Duy Toan</title>
-  <meta name="description" content="Personal portfolio for Do Duy Toan - Java Web, AI, Big Data Developer. Projects and skills.">
-  <meta name="keywords" content="Do Duy Toan, Java Developer, Spring Boot, Python, AI, Big Data, Portfolio, Developer">
+    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="../assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../assets/css/main.css" rel="stylesheet" />
+  </head>
 
-  <link href="../assets/css/main.css" rel="stylesheet">
+  <body class="index-page">
+    <header
+      id="header"
+      class="header dark-background d-flex flex-column justify-content-between"
+    >
+      <i class="header-toggle d-xl-none bi bi-list"></i>
 
-</head>
-
-<body class="index-page">
-
-  <header id="header" class="header dark-background d-flex flex-column justify-content-between">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="header-top">
-      <div class="profile-img">
-        <img src="../assets/img/profile/avatar_index.jpg" alt="" class="img-fluid">
-      </div>
-
-      <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-        <h1 class="sitename">Do Duy Toan</h1>
-      </a>
-
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#skills"><i class="bi bi-bar-chart-steps navicon"></i> Skills</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Expertise</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
-      </ul>
-    </nav>
-    
-    <div class="language-switcher">
-      <a href="../index.html" class="lang-vi" title="Tiếng Việt">
-        <img src="../assets/img/flags/vi.png" alt="Tiếng Việt">
-      </a>
-      <a href="index.html" class="lang-en active" title="English">
-        <img src="../assets/img/flags/en.png" alt="English">
-      </a>
-    </div>
-
-    <div class="social-links text-center">
-      <a href="https://github.com/toando22" target="_blank" class="github"><i class="bi bi-github"></i></a>
-      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-    </div>
-
-  </header>
-
-  <main class="main">
-
-    <section id="hero" class="hero section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-center">
-          <div class="col-lg-6 order-2 order-lg-1">
-            <div class="hero-content">
-              <h1 data-aos="fade-up" data-aos-delay="200">
-                Do Duy Toan
-                <span class="accent-text">Developer</span>
-              </h1>
-              <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
-                I am an Information Technology student passionate about Backend (Java/Spring) and Artificial Intelligence (Python).
-              </p>
-              <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
-                <a href="#portfolio" class="btn-primary">View Projects</a>
-                <a href="#contact" class="btn-secondary">Get In Touch</a>
-              </div>
-              <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
-                <div class="stat-item">
-                  <span class="stat-number">6+</span>
-                  <span class="stat-label">Key Projects</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number">3+</span>
-                  <span class="stat-label">Languages (Java, Python, C++)</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number">20+</span>
-                  <span class="stat-label">Skills & Technologies</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 order-1 order-lg-2">
-            <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
-              <div class="image-wrapper">
-                <img src="../assets/img/profile/avatar_index.jpg" alt="Do Duy Toan - Java Developer" class="img-fluid main-image">
-                <div class="floating-card card-1" data-aos="fade-up" data-aos-delay="600">
-                  <i class="bi bi-code-braces"></i>
-                  <span>Java & Spring Boot</span>
-                </div>
-                <div class="floating-card card-2" data-aos="fade-up" data-aos-delay="700">
-                  <i class="bi bi-robot"></i>
-                  <span>AI & Big Data</span>
-                </div>
-                <div class="floating-card card-3" data-aos="fade-up" data-aos-delay="800">
-                  <i class="bi bi-filetype-py"></i>
-                  <span>Python</span>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="header-top">
+        <div class="profile-img">
+          <img
+            src="../assets/img/profile/avatar_index.jpg"
+            alt=""
+            class="img-fluid"
+          />
         </div>
 
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center justify-content-center"
+        >
+          <h1 class="sitename">Do Duy Toan</h1>
+        </a>
       </div>
 
-    </section><section id="about" class="about section">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li>
+            <a href="#hero" class="active"
+              ><i class="bi bi-house navicon"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="#about"><i class="bi bi-person navicon"></i> About</a>
+          </li>
+          <li>
+            <a href="#skills"
+              ><i class="bi bi-bar-chart-steps navicon"></i> Skills</a
+            >
+          </li>
+          <li>
+            <a href="#resume"
+              ><i class="bi bi-file-earmark-text navicon"></i> Resume</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio"
+              ><i class="bi bi-images navicon"></i> Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#services"
+              ><i class="bi bi-hdd-stack navicon"></i> Expertise</a
+            >
+          </li>
+          <li>
+            <a href="#contact"
+              ><i class="bi bi-envelope navicon"></i> Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-
-            <div class="intro-header text-center" data-aos="fade-up" data-aos-delay="150">
-              <h1>Hi, I'm Do Duy Toan</h1>
-              <p class="subtitle">Developer (Java Web, AI/Data) &amp; 4th Year Student</p>
-            </div>
-
-            <div class="main-content-wrapper">
-              <div class="row align-items-start">
-
-                <div class="col-lg-4" data-aos="fade-right" data-aos-delay="200">
-                  <div class="profile-section">
-                    <div class="profile-image-container">
-                      <img src="../assets/img/profile/index_1.jpg" class="img-fluid" alt="Do Duy Toan">
-                    </div>
-                    <div class="profile-meta">
-                      <div class="location">
-                        <i class="bi bi-geo-alt"></i>
-                        <span>Hanoi, Vietnam</span>
-                      </div>
-                      <div class="status">
-                        <div class="status-indicator"></div>
-                        <span>Available for Internships</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-8" data-aos="fade-left" data-aos-delay="250">
-                  <div class="content-area">
-
-                    <div class="story-block">
-                      <p class="lead-text">I am a 4th-year Information Technology student at Hanoi University of Industry. With hands-on experience from personal projects using Java Spring Boot, I am eager to apply my knowledge in a real-world environment through a Java Web Internship.</p>
-
-                      <p>My philosophy focuses on clean, optimized, and scalable code. Not limited to Java Web, I am also passionate about complex algorithms, Artificial Intelligence, and Data Analysis. My goal is to learn professional workflows, contribute to company projects, and continuously develop my programming skills.</p>
-                    </div>
-
-                    <div class="expertise-grid">
-                      <div class="expertise-item" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="expertise-icon">
-                          <i class="bi bi-server"></i>
-                        </div>
-                        <div class="expertise-content">
-                          <h4>Backend Development</h4>
-                          <p>Building RESTful APIs, handling business logic, and security with Spring Boot.</p>
-                        </div>
-                      </div>
-
-                      <div class="expertise-item" data-aos="zoom-in" data-aos-delay="350">
-                        <div class="expertise-icon">
-                          <i class="bi bi-lightbulb"></i>
-                        </div>
-                        <div class="expertise-content">
-                          <h4>AI & Data</h4>
-                          <p>Analyzing big data and building AI models for emotion recognition using Python.</p>
-                        </div>
-                      </div>
-
-                      <div class="expertise-item" data-aos="zoom-in" data-aos-delay="400">
-                        <div class="expertise-icon">
-                          <i class="bi bi-journal-code"></i>
-                        </div>
-                        <div class="expertise-content">
-                          <h4>Algorithms & Security</h4>
-                          <p>Researching Data Structures & Algorithms, applied to cryptography problems (RSA, ElGamal).</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="philosophy-quote" data-aos="fade-up" data-aos-delay="450">
-                      <div class="quote-mark">"</div>
-                      <p>Continuous learning is the key to growth in the Information Technology industry.</p>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="bottom-section" data-aos="fade-up" data-aos-delay="500">
-              <div class="row align-items-center">
-                <div class="col-lg-6">
-                  <div class="collaboration-text">
-                    <h3>Let's build something meaningful together</h3>
-                    <p>I'm always open to discussing internship opportunities or interesting projects.</p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="action-buttons">
-                    <a href="#resume" class="btn-custom primary">View Resume</a>
-                    <a href="#contact" class="btn-custom secondary">Contact Me</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
+      <div class="language-switcher">
+        <a href="../index.html" class="lang-vi" title="Tiếng Việt">
+          <img src="../assets/img/flags/vi.png" alt="Tiếng Việt" />
+        </a>
+        <a href="index.html" class="lang-en active" title="English">
+          <img src="../assets/img/flags/en.png" alt="English" />
+        </a>
       </div>
 
-    </section><section id="skills" class="skills section">
+      <div class="social-links text-center">
+        <a href="https://github.com/toando22" target="_blank" class="github"
+          ><i class="bi bi-github"></i
+        ></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      </div>
+    </header>
 
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>I have a solid computer science foundation, diverse programming skills, and hands-on experience across multiple projects.</p>
-      </div><div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="skills-container">
-
-              <div class="skill-category skills-animation" data-aos="fade-up" data-aos-delay="200">
-                <div class="category-header">
-                  <h3 class="category-title">Software Development</h3>
-                  <p class="category-subtitle">Languages, Frameworks, and Tools</p>
+    <main class="main">
+      <section id="hero" class="hero section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-center">
+            <div class="col-lg-6 order-2 order-lg-1">
+              <div class="hero-content">
+                <h1 data-aos="fade-up" data-aos-delay="200">
+                  Do Duy Toan
+                  <span class="accent-text">Developer</span>
+                </h1>
+                <p
+                  class="hero-description"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  As a Fullstack Developer at MISA JSC, I am passionate about
+                  crafting robust software solutions (Java/Spring - C#) and
+                  integrating Artificial Intelligence (Python) to solve
+                  real-world challenges.
+                </p>
+                <div
+                  class="hero-actions"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <a href="#portfolio" class="btn-primary">View Projects</a>
+                  <a href="#contact" class="btn-secondary">Get In Touch</a>
                 </div>
-                <div class="skills-list">
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">Java (Core, JavaFX) & Spring Boot</span>
-                      <span class="skill-percentage">90%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
+                  <div class="stat-item">
+                    <span class="stat-number">6+</span>
+                    <span class="stat-label">Key Projects</span>
                   </div>
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">Python (AI, Big Data, ElGamal)</span>
-                      <span class="skill-percentage">85%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+                  <div class="stat-item">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Languages (Java, Python, C#)</span>
                   </div>
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">C/C++ (Fundamental Programming)</span>
-                      <span class="skill-percentage">75%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">MySQL & Hibernate/JPA</span>
-                      <span class="skill-percentage">85%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+                  <div class="stat-item">
+                    <span class="stat-number">25+</span>
+                    <span class="stat-label">Skills & Technologies</span>
                   </div>
                 </div>
               </div>
-
-              <div class="skill-category skills-animation" data-aos="fade-up" data-aos-delay="250">
-                <div class="category-header">
-                  <h3 class="category-title">Computer Science Foundations</h3>
-                  <p class="category-subtitle">Specialized Fields</p>
-                </div>
-                <div class="skills-list">
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">Data Structures & Algorithms</span>
-                      <span class="skill-percentage">80%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">Artificial Intelligence (AI/ML - Facial Recognition)</span>
-                      <span class="skill-percentage">70%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">Cryptography & Information Security (RSA, ElGamal)</span>
-                      <span class="skill-percentage">75%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
             </div>
-          </div>
 
-          <div class="col-lg-4">
-            <div class="skills-sidebar">
-
-              <div class="expertise-highlight" data-aos="fade-up" data-aos-delay="350">
-                <div class="highlight-icon">
-                  <i class="bi bi-calendar-check"></i>
-                </div>
-                <h4 class="highlight-title">Years of Study</h4>
-                <div class="experience-number">
-                  <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
-                  <span class="experience-label">Years</span>
-                </div>
-                <p class="highlight-description">Years of study and practical project implementation in Information Technology.</p>
-              </div>
-
-              <div class="technologies-section" data-aos="fade-up" data-aos-delay="400">
-                <h5 class="tech-title">Core Languages & Technologies</h5>
-                <div class="tech-stack">
-                  <div class="tech-item">
-                    <i class="bi bi-code-square"></i>
-                    <span>Java</span>
+            <div class="col-lg-6 order-1 order-lg-2">
+              <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+                <div class="image-wrapper">
+                  <img
+                    src="../assets/img/profile/avatar_index.jpg"
+                    alt="Do Duy Toan - Java Developer"
+                    class="img-fluid main-image"
+                  />
+                  <div
+                    class="floating-card card-1"
+                    data-aos="fade-up"
+                    data-aos-delay="600"
+                  >
+                    <i class="bi bi-code-braces"></i>
+                    <span>Java & Spring Boot</span>
                   </div>
-                  <div class="tech-item">
-                    <i class="bi bi-braces"></i>
-                    <span>Spring Boot</span>
+                  <div
+                    class="floating-card card-2"
+                    data-aos="fade-up"
+                    data-aos-delay="700"
+                  >
+                    <i class="bi bi-robot"></i>
+                    <span>AI & Big Data</span>
                   </div>
-                  <div class="tech-item">
+                  <div
+                    class="floating-card card-3"
+                    data-aos="fade-up"
+                    data-aos-delay="800"
+                  >
                     <i class="bi bi-filetype-py"></i>
                     <span>Python</span>
                   </div>
-                  <div class="tech-item">
-                    <i class="bi bi-filetype-cpp"></i>
-                    <span>C++</span>
-                  </div>
-                  <div class="tech-item">
-                    <i class="bi bi-database"></i>
-                    <span>MySQL</span>
-                  </div>
-                  <div class="tech-item">
-                    <i class="bi bi-git"></i>
-                    <span>Git</span>
-                  </div>
                 </div>
               </div>
-
-              <div class="achievements-section" data-aos="fade-up" data-aos-delay="450">
-                <h5 class="achievements-title">Achievements & Projects</h5>
-                <div class="achievement-list">
-                  <div class="achievement-item">
-                    <div class="achievement-date">2025</div>
-                    <div class="achievement-text">Big Data Certificate - Samsung (SIC)</div>
-                  </div>
-                  <div class="achievement-item">
-                    <div class="achievement-date">2025</div>
-                    <div class="achievement-text">Completed AI Emotion Recognition Project</div>
-                  </div>
-                  <div class="achievement-item">
-                    <div class="achievement-date">2024</div>
-                    <div class="achievement-text">Booking Healthy Project (Team Lead)</div>
-                  </div>
-                  <div class="achievement-item">
-                    <div class="achievement-date">2024</div>
-                    <div class="achievement-text">Greeny Farm Project (Project Manager)</div>
-                  </div>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
-
-      </div>
-
-    </section><section id="resume" class="resume section">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>My Resume</h2>
-        <p>An overview of my academic and project experience.</p>
-      </div><div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-start">
-          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
-            <div class="professional-journey">
-              <div class="section-intro">
-                <div class="icon-wrapper">
-                  <i class="bi bi-briefcase-fill"></i>
-                </div>
-                <h2>Project Experience</h2>
-                <p>Practical projects completed during my studies.</p>
+      </section>
+      <section id="about" class="about section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div
+                class="intro-header text-center"
+                data-aos="fade-up"
+                data-aos-delay="150"
+              >
+                <h1>Hi, I'm Do Duy Toan</h1>
+                <p class="subtitle">Fullstack Developer (Java Web, AI/Data)</p>
               </div>
 
-              <div class="experience-timeline">
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-                  <div class="timeline-dot"></div>
-                  <div class="timeline-content">
-                    <div class="position-meta">
-                      <span class="timeline-year">Jun 2024 - Aug 2024</span>
+              <div class="main-content-wrapper">
+                <div class="row align-items-start">
+                  <div
+                    class="col-lg-4"
+                    data-aos="fade-right"
+                    data-aos-delay="200"
+                  >
+                    <div class="profile-section">
+                      <div class="profile-image-container">
+                        <img
+                          src="../assets/img/profile/index_1.jpg"
+                          class="img-fluid"
+                          alt="Do Duy Toan"
+                        />
+                      </div>
+                      <div class="profile-meta">
+                        <div class="location">
+                          <i class="bi bi-geo-alt"></i>
+                          <span>Hanoi, Vietnam</span>
+                        </div>
+                        <div class="status">
+                          <div class="status-indicator"></div>
+                          <span>Fullstack Developer at MISA JSC</span>
+                        </div>
+                      </div>
                     </div>
-                    <h3>Team Lead / Backend Developer</h3>
-                    <h4>Project: Booking Healthy (Healthcare System)</h4>
-                    <p>Designed DB (Doctors, Patients), built APIs, implemented Spring Security, integrated Thymeleaf, and set up automated emails.</p>
-                    <div class="key-achievements">
-                      <span class="achievement-tag">Spring Boot</span>
-                      <span class="achievement-tag">MySQL</span>
-                      <span class="achievement-tag">Thymeleaf</span>
+                  </div>
+
+                  <div
+                    class="col-lg-8"
+                    data-aos="fade-left"
+                    data-aos-delay="250"
+                  >
+                    <div class="content-area">
+                      <div class="story-block">
+                        <p class="lead-text">
+                          With a strong technical foundation proven by an
+                          outstanding Graduation Project score of 9.7/10, I
+                          currently serve as a Fullstack Developer at MISA JSC.
+                        </p>
+
+                        <p>
+                          My development philosophy centers on clean
+                          architecture, performance optimization, and
+                          scalability. Beyond Web Development, I deeply explore
+                          complex algorithms, AI, and Big Data. My goal is to
+                          build technology products that deliver sustainable
+                          value.
+                        </p>
+                      </div>
+
+                      <div class="expertise-grid">
+                        <div
+                          class="expertise-item"
+                          data-aos="zoom-in"
+                          data-aos-delay="300"
+                        >
+                          <div class="expertise-icon">
+                            <i class="bi bi-server"></i>
+                          </div>
+                          <div class="expertise-content">
+                            <h4>Backend Development</h4>
+                            <p>
+                              Building RESTful APIs, handling business logic,
+                              and security with Spring Boot.
+                            </p>
+                          </div>
+                        </div>
+
+                        <div
+                          class="expertise-item"
+                          data-aos="zoom-in"
+                          data-aos-delay="350"
+                        >
+                          <div class="expertise-icon">
+                            <i class="bi bi-lightbulb"></i>
+                          </div>
+                          <div class="expertise-content">
+                            <h4>AI & Data</h4>
+                            <p>
+                              Analyzing big data and building AI models for
+                              emotion recognition using Python.
+                            </p>
+                          </div>
+                        </div>
+
+                        <div
+                          class="expertise-item"
+                          data-aos="zoom-in"
+                          data-aos-delay="400"
+                        >
+                          <div class="expertise-icon">
+                            <i class="bi bi-journal-code"></i>
+                          </div>
+                          <div class="expertise-content">
+                            <h4>Algorithms & Security</h4>
+                            <p>
+                              Researching Data Structures & Algorithms, applied
+                              to cryptography problems (RSA, ElGamal).
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="philosophy-quote"
+                        data-aos="fade-up"
+                        data-aos-delay="450"
+                      >
+                        <div class="quote-mark">"</div>
+                        <p>
+                          Continuous learning is the key to growth in the
+                          Information Technology industry.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="350">
-                  <div class="timeline-dot"></div>
-                  <div class="timeline-content">
-                    <div class="position-meta">
-                      <span class="timeline-year">Oct 2024 - Feb 2025</span>
+              <div
+                class="bottom-section"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <div class="collaboration-text">
+                      <h3>Let's build something meaningful together</h3>
+                      <p>
+                        I'm always open to discussing internship opportunities
+                        or interesting projects.
+                      </p>
                     </div>
-                    <h3>Project Manager / Backend Developer</h3>
-                    <h4>Project: Greeny Farm (E-commerce Website)</h4>
-                    <p>Built e-commerce system (Products, Cart, Order) using MVC. Wrote REST APIs for cart and managed team progress.</p>
                   </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-                  <div class="timeline-dot"></div>
-                  <div class="timeline-content">
-                    <div class="position-meta">
-                      <span class="timeline-year">Jun 2025 - Oct 2025</span>
+                  <div class="col-lg-6">
+                    <div class="action-buttons">
+                      <a href="#resume" class="btn-custom primary"
+                        >View Resume</a
+                      >
+                      <a href="#contact" class="btn-custom secondary"
+                        >Contact Me</a
+                      >
                     </div>
-                    <h3>Main Developer</h3>
-                    <h4>Project: SmartFinance (Personal Finance App)</h4>
-                    <p>Built an Android (Java) app for expense tracking. Used SQLite for local storage and applied Material Design.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
-            <div class="education-skills">
-              <div class="section-intro">
-                <div class="icon-wrapper">
-                  <i class="bi bi-mortarboard-fill"></i>
+        </div>
+      </section>
+      <section id="skills" class="skills section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Skills</h2>
+          <p>
+            I have a solid computer science foundation, diverse programming
+            skills, and hands-on experience across multiple projects.
+          </p>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="skills-container">
+                <div
+                  class="skill-category skills-animation"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <div class="category-header">
+                    <h3 class="category-title">Software Development</h3>
+                    <p class="category-subtitle">
+                      Languages, Frameworks, and Tools
+                    </p>
+                  </div>
+                  <div class="skills-list">
+                    <div class="skill-row">
+                      <div class="skill-info">
+                        <span class="skill-name"
+                          >Java (Core, JavaFX) & Spring Boot</span
+                        >
+                        <span class="skill-percentage">90%</span>
+                      </div>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="90"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="skill-row">
+                      <div class="skill-info">
+                        <span class="skill-name"
+                          >Python (AI, Big Data, ElGamal)</span
+                        >
+                        <span class="skill-percentage">85%</span>
+                      </div>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="85"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="skill-row">
+                      <div class="skill-info">
+                        <span class="skill-name">C# (.NET) & C/C++</span>
+                        <span class="skill-percentage">75%</span>
+                      </div>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="75"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="skill-row">
+                      <div class="skill-info">
+                        <span class="skill-name">MySQL & Hibernate/JPA</span>
+                        <span class="skill-percentage">85%</span>
+                      </div>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="85"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="skill-row">
+                      <div class="skill-info">
+                        <span class="skill-name"
+                          >Frontend (Vue 3 JS, Bootstrap)</span
+                        >
+                        <span class="skill-percentage">80%</span>
+                      </div>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="80"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="skill-row">
+                      <div class="skill-info">
+                        <span class="skill-name"
+                          >AI Agent in Coding (Copilot, Cursor)</span
+                        >
+                        <span class="skill-percentage">85%</span>
+                      </div>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="85"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <h2>Education &amp; Activities</h2>
-                <p>My formal education and extracurricular activities.</p>
+
+                <div
+                  class="skill-category skills-animation"
+                  data-aos="fade-up"
+                  data-aos-delay="250"
+                >
+                  <div class="category-header">
+                    <h3 class="category-title">Computer Science Foundations</h3>
+                    <p class="category-subtitle">Specialized Fields</p>
+                  </div>
+                  <div class="skills-list">
+                    <div class="skill-row">
+                      <div class="skill-info">
+                        <span class="skill-name"
+                          >Data Structures & Algorithms</span
+                        >
+                        <span class="skill-percentage">80%</span>
+                      </div>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="80"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="skill-row">
+                      <div class="skill-info">
+                        <span class="skill-name"
+                          >Artificial Intelligence (AI/ML - Facial
+                          Recognition)</span
+                        >
+                        <span class="skill-percentage">70%</span>
+                      </div>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="70"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="skill-row">
+                      <div class="skill-info">
+                        <span class="skill-name"
+                          >Cryptography & Information Security (RSA,
+                          ElGamal)</span
+                        >
+                        <span class="skill-percentage">75%</span>
+                      </div>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="75"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
 
-              <div class="education-grid">
-                <div class="education-card primary" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="education-header">
-                    <div class="degree-icon">
-                      <i class="bi bi-award"></i>
-                    </div>
-                    <div class="degree-info">
-                      <h3>Bachelor of Information Technology</h3>
-                      <p class="institution">Hanoi University of Industry</p>
-                      <span class="graduation-year">2022 - 2026</span>
-                    </div>
+            <div class="col-lg-4">
+              <div class="skills-sidebar">
+                <div
+                  class="expertise-highlight"
+                  data-aos="fade-up"
+                  data-aos-delay="350"
+                >
+                  <div class="highlight-icon">
+                    <i class="bi bi-calendar-check"></i>
                   </div>
-                  <div class="education-details">
-                    <p>IT major, focusing on software development. Solid foundation in Data Structures & Algorithms, Programming (C++, Python, Java).</p>
-                    <div class="honors">
-                      <span class="honor-badge">GPA: 2.9/4.0</span>
+                  <h4 class="highlight-title">Years of Study</h4>
+                  <div class="experience-number">
+                    <span
+                      data-purecounter-start="0"
+                      data-purecounter-end="4"
+                      data-purecounter-duration="1"
+                      class="purecounter"
+                    ></span>
+                    <span class="experience-label">Years</span>
+                  </div>
+                  <p class="highlight-description">
+                    Years of study and practical project implementation in
+                    Information Technology.
+                  </p>
+                </div>
+
+                <div
+                  class="technologies-section"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <h5 class="tech-title">Core Languages & Technologies</h5>
+                  <div class="tech-stack">
+                    <div class="tech-item">
+                      <i class="bi bi-code-square"></i>
+                      <span>Java</span>
+                    </div>
+                    <div class="tech-item">
+                      <i class="bi bi-braces"></i>
+                      <span>Spring Boot</span>
+                    </div>
+                    <div class="tech-item">
+                      <i class="bi bi-filetype-py"></i>
+                      <span>Python</span>
+                    </div>
+                    <div class="tech-item">
+                      <i class="bi bi-filetype-cs"></i>
+                      <span>C#</span>
+                    </div>
+                    <div class="tech-item">
+                      <i class="bi bi-filetype-js"></i>
+                      <span>Vue 3</span>
+                    </div>
+                    <div class="tech-item">
+                      <i class="bi bi-database"></i>
+                      <span>MySQL</span>
+                    </div>
+                    <div class="tech-item">
+                      <i class="bi bi-git"></i>
+                      <span>Git</span>
+                    </div>
+                    <div class="tech-item">
+                      <i class="bi bi-robot"></i>
+                      <span>AI Agent</span>
                     </div>
                   </div>
                 </div>
 
-                <div class="education-card" data-aos="zoom-in" data-aos-delay="350">
-                  <div class="education-header">
-                    <div class="degree-icon">
-                      <i class="bi bi-people"></i>
+                <div
+                  class="achievements-section"
+                  data-aos="fade-up"
+                  data-aos-delay="450"
+                >
+                  <h5 class="achievements-title">Achievements & Projects</h5>
+                  <div class="achievement-list">
+                    <div class="achievement-item">
+                      <div class="achievement-date">2026</div>
+                      <div class="achievement-text">
+                        Finalist - Digital Era Creative Innovation
+                      </div>
                     </div>
-                    <div class="degree-info">
-                      <h3>Club Activities</h3>
-                      <p class="institution">Member, HIT Club</p>
-                      <span class="graduation-year">2022 - 2023</span>
+                    <div class="achievement-item">
+                      <div class="achievement-date">2025</div>
+                      <div class="achievement-text">
+                        Big Data Certificate - Samsung (SIC)
+                      </div>
                     </div>
-                  </div>
-                  <div class="education-details">
-                    <p>Participated in programming courses (Java, C#) and specialized knowledge-sharing sessions, building real-world projects.</p>
-                  </div>
-                </div>
-
-                <div class="certification-section" data-aos="fade-up" data-aos-delay="400">
-                  <h4>Professional Certifications</h4>
-                  <div class="certifications">
-                    <div class="cert-item">
-                      <i class="bi bi-patch-check"></i>
-                      <div class="cert-details">
-                        <span class="cert-name">Big Data Certificate</span>
-                        <span class="cert-provider">Samsung Innovation Campus (SIC) • 2025</span>
+                    <div class="achievement-item">
+                      <div class="achievement-date">2025</div>
+                      <div class="achievement-text">
+                        Completed AI Emotion Recognition Project
+                      </div>
+                    </div>
+                    <div class="achievement-item">
+                      <div class="achievement-date">2024</div>
+                      <div class="achievement-text">
+                        Booking Healthy Project (Team Lead)
+                      </div>
+                    </div>
+                    <div class="achievement-item">
+                      <div class="achievement-date">2024</div>
+                      <div class="achievement-text">
+                        Greeny Farm Project (Project Manager)
                       </div>
                     </div>
                   </div>
@@ -530,369 +675,765 @@
             </div>
           </div>
         </div>
-
-      </div>
-
-    </section><section id="portfolio" class="portfolio section">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>My Portfolio</h2>
-        <p>These are the key projects I've built, showcasing my skills in Web Apps, AI, Big Data, and Desktop applications.</p>
-      </div><div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <div class="filters-wrapper" data-aos="fade-up" data-aos-delay="200">
-            <ul class="portfolio-filters isotope-filters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-web">Web App</li>
-              <li data-filter=".filter-ai-data">AI & Data</li>
-              <li data-filter=".filter-desktop-mobile">Desktop & Mobile</li>
-            </ul>
-          </div>
-
-          <div class="row gy-5 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="300">
-
-            <div class="col-lg-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="../assets/img/portfolio/portfolio-3.webp" class="img-fluid" alt="Booking Healthy" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="../assets/img/portfolio/portfolio-3.webp" class="glightbox action-btn preview-btn" title="Booking Healthy"><i class="bi bi-eye"></i></a>
-                      <a href="project-booking.html" class="action-btn details-btn" title="View Project"><i class="bi bi-arrow-up-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <div class="portfolio-meta">
-                    <span class="portfolio-category">Web Application</span>
-                    <span class="portfolio-year">2024</span>
-                  </div>
-                  <h3 class="portfolio-title">Healthcare Booking System (Booking Healthy)</h3>
-                  <p class="portfolio-description">A team project (Team Lead role) to build an appointment system. Used Spring Boot (API & Security), MySQL, and Thymeleaf.</p>
-                </div>
-              </div>
-            </div><div class="col-lg-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="../assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="Greeny Farm" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="../assets/img/portfolio/portfolio-7.webp" class="glightbox action-btn preview-btn" title="Greeny Farm"><i class="bi bi-eye"></i></a>
-                      <a href="project-agri.html" class="action-btn details-btn" title="View Project"><i class="bi bi-arrow-up-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <div class="portfolio-meta">
-                    <span class="portfolio-category">Web Application</span>
-                    <span class="portfolio-year">2024</span>
-                  </div>
-                  <h3 class="portfolio-title">E-commerce Website (Greeny Farm)</h3>
-                  <p class="portfolio-description">E-commerce site (PM & Backend role) with Cart, Order modules. Tech: Spring Boot, JPA, Thymeleaf, and REST API.</p>
-                </div>
-              </div>
-            </div><div class="col-lg-6 portfolio-item isotope-item filter-desktop-mobile">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="../assets/img/portfolio/portfolio-portrait-3.webp" class="img-fluid" alt="SmartFinance" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="../assets/img/portfolio/portfolio-portrait-3.webp" class="glightbox action-btn preview-btn" title="SmartFinance"><i class="bi bi-eye"></i></a>
-                      <a href="project-finance-app.html" class="action-btn details-btn" title="View Project"><i class="bi bi-arrow-up-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <div class="portfolio-meta">
-                    <span class="portfolio-category">Mobile App</span>
-                    <span class="portfolio-year">2025</span>
-                  </div>
-                  <h3 class="portfolio-title">Expense Tracker App (SmartFinance)</h3>
-                  <p class="portfolio-description">An Android (Java) app for personal expense tracking. Uses SQLite for local storage and Material Design.</p>
-                </div>
-              </div>
-            </div><div class="col-lg-6 portfolio-item isotope-item filter-ai-data">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="../assets/img/portfolio/portfolio-9.webp" class="img-fluid" alt="AI Emotion Recognition" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="../assets/img/portfolio/portfolio-9.webp" class="glightbox action-btn preview-btn" title="AI Emotion Recognition"><i class="bi bi-eye"></i></a>
-                      <a href="project-ai-emotion.html" class="action-btn details-btn" title="View Project"><i class="bi bi-arrow-up-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <div class="portfolio-meta">
-                    <span class="portfolio-category">AI / Machine Learning</span>
-                    <span class="portfolio-year">2025</span>
-                  </div>
-                  <h3 class="portfolio-title">AI Facial Emotion Recognition</h3>
-                  <p class="portfolio-description">Built an AI model (Python, OpenCV, TensorFlow) to analyze and recognize 7 basic human emotions from a live webcam feed.</p>
-                </div>
-              </div>
-            </div><div class="col-lg-6 portfolio-item isotope-item filter-ai-data filter-web">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="../assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt="Big Data Analysis" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="../assets/img/portfolio/portfolio-11.webp" class="glightbox action-btn preview-btn" title="Big Data Analysis"><i class="bi bi-eye"></i></a>
-                      <a href="project-bigdata.html" class="action-btn details-btn" title="View Project"><i class="bi bi-arrow-up-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <div class="portfolio-meta">
-                    <span class="portfolio-category">Big Data / Web</span>
-                    <span class="portfolio-year">2025</span>
-                  </div>
-                  <h3 class="portfolio-title">Customer Behavior Analysis (Big Data)</h3>
-                  <p class="portfolio-description">A project (from Samsung SIC) using Python (Pandas) to analyze large datasets and a web dashboard (Flask) to visualize insights.</p>
-                </div>
-              </div>
-            </div><div class="col-lg-6 portfolio-item isotope-item filter-desktop-mobile">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="../assets/img/portfolio/portfolio-12.webp" class="img-fluid" alt="RSA Encryption App" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="../assets/img/portfolio/portfolio-12.webp" class="glightbox action-btn preview-btn" title="RSA Encryption App"><i class="bi bi-eye"></i></a>
-                      <a href="project-crypto.html" class="action-btn details-btn" title="View Project"><i class="bi bi-arrow-up-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <div class="portfolio-meta">
-                    <span class="portfolio-category">Desktop App / Security</span>
-                    <span class="portfolio-year">2024</span>
-                  </div>
-                  <h3 class="portfolio-title">RSA & ElGamal Encryption App</h3>
-                  <p class="portfolio-description">Developed a Desktop app (Java, JavaFX) to simulate asymmetric encryption algorithms. Also implemented ElGamal in Python for research.</p>
-                </div>
-              </div>
-            </div></div></div>
-
-      </div>
-
-    </section><section id="services" class="services section">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>My Expertise</h2>
-        <p>The primary skills and domains I can contribute to.</p>
-      </div><div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-5">
-
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-server"></i>
-              </div>
-              <div class="service-content">
-                <h3>Backend Development (Java)</h3>
-                <p>Building business logic, APIs, and system security using Java Spring Boot – my main strength.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="250">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-lightbulb"></i>
-              </div>
-              <div class="service-content">
-                <h3>AI & Data Analysis (Python)</h3>
-                <p>Building emotion recognition AI models (OpenCV, TensorFlow) and analyzing customer behavior (Big Data, Pandas).</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="300">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-display"></i>
-              </div>
-              <div class="service-content">
-                <h3>Application Development (Full-stack)</h3>
-                <p>Building complete Web (Spring, Thymeleaf) and Desktop (JavaFX) applications, from UI to database.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="350">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-shield-lock"></i>
-              </div>
-              <div class="service-content">
-                <h3>Algorithms & Databases</h3>
-                <p>Designing databases (MySQL) and applying algorithms (Data Structures, RSA, ElGamal) to practical applications.</p>
-              </div>
-            </div>
-          </div>
-
+      </section>
+      <section id="resume" class="resume section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>My Resume</h2>
+          <p>An overview of my academic and project experience.</p>
         </div>
-
-      </div>
-
-    </section><section id="contact" class="contact section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Ready to discuss internship opportunities or interesting projects. Let's get in touch!</p>
-      </div><div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-5">
-
-            <div class="info-item">
-              <div class="info-icon">
-                <i class="bi bi-chat-dots"></i>
-              </div>
-              <div class="info-content">
-                <h4>Let's Connect</h4>
-                <p>I'm here to discuss your vision and explore how we can work together.</p>
-              </div>
-            </div>
-
-            <div class="contact-details">
-
-              <div class="detail-item">
-                <div class="detail-icon">
-                  <i class="bi bi-envelope-open"></i>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-start">
+            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+              <div class="professional-journey">
+                <div class="section-intro">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-briefcase-fill"></i>
+                  </div>
+                  <h2>Project Experience</h2>
+                  <p>Practical projects completed during my studies.</p>
                 </div>
-                <div class="detail-content">
-                  <span class="detail-label">Email</span>
-                  <span class="detail-value">doduytoan2201@gmail.com</span>
-                </div>
-              </div>
 
-              <div class="detail-item">
-                <div class="detail-icon">
-                  <i class="bi bi-telephone-outbound"></i>
-                </div>
-                <div class="detail-content">
-                  <span class="detail-label">Phone</span>
-                  <span class="detail-value">0358 493 974</span>
-                </div>
-              </div>
-
-              <div class="detail-item">
-                <div class="detail-icon">
-                  <i class="bi bi-geo-alt-fill"></i>
-                </div>
-                <div class="detail-content">
-                  <span class="detail-label">Location</span>
-                  <span class="detail-value">Bac Tu Liem, Hanoi</span>
-                </div>
-              </div>
-
-              <div class="detail-item">
-                <div class="detail-icon">
-                  <i class="bi bi-github"></i>
-                </div>
-                <div class="detail-content">
-                  <span class="detail-label">GitHub</span>
-                  <span class="detail-value">github.com/toando22</span>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-7">
-            <div class="form-wrapper">
-              <div class="form-header">
-                <h3>Send me a message</h3>
-              </div>
-
-              <form action="https://formspree.io/f/xrborkon" method="post">
-
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label>Full Name</label>
-                      <input type="text" name="name" required="">
+                <div class="experience-timeline">
+                  <div
+                    class="timeline-item"
+                    data-aos="fade-up"
+                    data-aos-delay="250"
+                  >
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="position-meta">
+                        <span class="timeline-year">Current</span>
+                      </div>
+                      <h3>Fullstack Developer</h3>
+                      <h4>MISA JSC</h4>
+                      <p>
+                        Actively developing and optimizing core software
+                        products. Responsible for designing APIs, handling
+                        complex business logic, and building user interfaces,
+                        ensuring top-tier performance and code quality.
+                      </p>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label>Email Address</label>
-                      <input type="email" name="email" required="">
+
+                  <div
+                    class="timeline-item"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  >
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="position-meta">
+                        <span class="timeline-year">Jun 2024 - Aug 2024</span>
+                      </div>
+                      <h3>Team Lead / Backend Developer</h3>
+                      <h4>Project: Booking Healthy (Healthcare System)</h4>
+                      <p>
+                        Designed DB (Doctors, Patients), built APIs, implemented
+                        Spring Security, integrated Thymeleaf, and set up
+                        automated emails.
+                      </p>
+                      <div class="key-achievements">
+                        <span class="achievement-tag">Spring Boot</span>
+                        <span class="achievement-tag">MySQL</span>
+                        <span class="achievement-tag">Thymeleaf</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="timeline-item"
+                    data-aos="fade-up"
+                    data-aos-delay="350"
+                  >
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="position-meta">
+                        <span class="timeline-year">May 2026 - Jun 2026</span>
+                      </div>
+                      <h3>Team Leader</h3>
+                      <h4>
+                        Digital Era Creative Innovation Competition (Finalist)
+                      </h4>
+                      <p>
+                        <strong>MedAI Project:</strong> A smart medical booking
+                        platform with a 24/7 AI virtual assistant. Analyzes
+                        patient symptoms to route to the correct specialty and
+                        books appointments within 5 mins. Integrated an
+                        actionable AI Agent to call APIs, check availability,
+                        and prevent double-booking via Soft-Lock.
+                      </p>
+                      <div class="key-achievements">
+                        <span class="achievement-tag">AI Agent</span>
+                        <span class="achievement-tag">Vue 3 JS</span>
+                        <span class="achievement-tag">C#</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="timeline-item"
+                    data-aos="fade-up"
+                    data-aos-delay="320"
+                  >
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="position-meta">
+                        <span class="timeline-year">Oct 2024 - Feb 2025</span>
+                      </div>
+                      <h3>Project Manager / Backend Developer</h3>
+                      <h4>Project: Greeny Farm (E-commerce Website)</h4>
+                      <p>
+                        Built e-commerce system (Products, Cart, Order) using
+                        MVC. Wrote REST APIs for cart and managed team progress.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="timeline-item"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="position-meta">
+                        <span class="timeline-year">Jun 2025 - Oct 2025</span>
+                      </div>
+                      <h3>Main Developer</h3>
+                      <h4>Project: SmartFinance (Personal Finance App)</h4>
+                      <p>
+                        Built an Android (Java) app for expense tracking. Used
+                        SQLite for local storage and applied Material Design.
+                      </p>
                     </div>
                   </div>
                 </div>
-
-                <div class="form-group">
-                  <label>Subject</label>
-                  <input type="text" name="subject" required="">
-                </div>
-
-                <div class="form-group">
-                  <label for="projectMessage">Message</label>
-                  <textarea name="message" id="projectMessage" rows="5" required=""></textarea>
-                </div>
-
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-
-                <button type="submit" class="submit-btn">
-                  <span>Send Message</span>
-                  <i class="bi bi-arrow-right"></i>
-                </button>
-
-              </form>
-
+              </div>
             </div>
 
-          </div>
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+              <div class="education-skills">
+                <div class="section-intro">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-mortarboard-fill"></i>
+                  </div>
+                  <h2>Education &amp; Activities</h2>
+                  <p>My formal education and extracurricular activities.</p>
+                </div>
 
+                <div class="education-grid">
+                  <div
+                    class="education-card primary"
+                    data-aos="zoom-in"
+                    data-aos-delay="300"
+                  >
+                    <div class="education-header">
+                      <div class="degree-icon">
+                        <i class="bi bi-award"></i>
+                      </div>
+                      <div class="degree-info">
+                        <h3>Bachelor of Information Technology</h3>
+                        <span class="graduation-year">Graduated</span>
+                      </div>
+                    </div>
+                    <div class="education-details">
+                      <p>
+                        Solid computer science foundation with a specialization
+                        in Software Engineering. Excellent logical thinking and
+                        problem-solving skills.
+                      </p>
+                      <div class="honors">
+                        <span class="honor-badge"
+                          >Graduation Project: 9.7/10</span
+                        >
+                        <span class="honor-badge">GPA: 2.9/4.0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="education-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="350"
+                  >
+                    <div class="education-header">
+                      <div class="degree-icon">
+                        <i class="bi bi-people"></i>
+                      </div>
+                      <div class="degree-info">
+                        <h3>Club Activities</h3>
+                        <p class="institution">Member, HIT Club</p>
+                        <span class="graduation-year">2022 - 2023</span>
+                      </div>
+                    </div>
+                    <div class="education-details">
+                      <p>
+                        Participated in programming courses (Java, C#) and
+                        specialized knowledge-sharing sessions, building
+                        real-world projects.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="certification-section"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
+                    <h4>Professional Certifications</h4>
+                    <div class="certifications">
+                      <div class="cert-item">
+                        <i class="bi bi-patch-check"></i>
+                        <div class="cert-details">
+                          <span class="cert-name">Big Data Certificate</span>
+                          <span class="cert-provider"
+                            >Samsung Innovation Campus (SIC) • 2025</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+      <section id="portfolio" class="portfolio section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>My Portfolio</h2>
+          <p>
+            These are the key projects I've built, showcasing my skills in Web
+            Apps, AI, Big Data, and Desktop applications.
+          </p>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <div
+              class="filters-wrapper"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <ul class="portfolio-filters isotope-filters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-web">Web App</li>
+                <li data-filter=".filter-ai-data">AI & Data</li>
+                <li data-filter=".filter-desktop-mobile">Desktop & Mobile</li>
+              </ul>
+            </div>
 
-    </section></main>
+            <div
+              class="row gy-5 portfolio-container isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="col-lg-6 portfolio-item isotope-item filter-web">
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="../assets/img/portfolio/portfolio-3.webp"
+                      class="img-fluid"
+                      alt="Booking Healthy"
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a
+                          href="../assets/img/portfolio/portfolio-3.webp"
+                          class="glightbox action-btn preview-btn"
+                          title="Booking Healthy"
+                          ><i class="bi bi-eye"></i
+                        ></a>
+                        <a
+                          href="project-booking.html"
+                          class="action-btn details-btn"
+                          title="View Project"
+                          ><i class="bi bi-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta">
+                      <span class="portfolio-category">Web Application</span>
+                      <span class="portfolio-year">2024</span>
+                    </div>
+                    <h3 class="portfolio-title">
+                      Healthcare Booking System (Booking Healthy)
+                    </h3>
+                    <p class="portfolio-description">
+                      A team project (Team Lead role) to build an appointment
+                      system. Used Spring Boot (API & Security), MySQL, and
+                      Thymeleaf.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 portfolio-item isotope-item filter-web">
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="../assets/img/portfolio/portfolio-7.webp"
+                      class="img-fluid"
+                      alt="Greeny Farm"
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a
+                          href="../assets/img/portfolio/portfolio-7.webp"
+                          class="glightbox action-btn preview-btn"
+                          title="Greeny Farm"
+                          ><i class="bi bi-eye"></i
+                        ></a>
+                        <a
+                          href="project-agri.html"
+                          class="action-btn details-btn"
+                          title="View Project"
+                          ><i class="bi bi-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta">
+                      <span class="portfolio-category">Web Application</span>
+                      <span class="portfolio-year">2024</span>
+                    </div>
+                    <h3 class="portfolio-title">
+                      E-commerce Website (Greeny Farm)
+                    </h3>
+                    <p class="portfolio-description">
+                      E-commerce site (PM & Backend role) with Cart, Order
+                      modules. Tech: Spring Boot, JPA, Thymeleaf, and REST API.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-6 portfolio-item isotope-item filter-desktop-mobile"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="../assets/img/portfolio/portfolio-portrait-3.webp"
+                      class="img-fluid"
+                      alt="SmartFinance"
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a
+                          href="../assets/img/portfolio/portfolio-portrait-3.webp"
+                          class="glightbox action-btn preview-btn"
+                          title="SmartFinance"
+                          ><i class="bi bi-eye"></i
+                        ></a>
+                        <a
+                          href="project-finance-app.html"
+                          class="action-btn details-btn"
+                          title="View Project"
+                          ><i class="bi bi-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta">
+                      <span class="portfolio-category">Mobile App</span>
+                      <span class="portfolio-year">2025</span>
+                    </div>
+                    <h3 class="portfolio-title">
+                      Expense Tracker App (SmartFinance)
+                    </h3>
+                    <p class="portfolio-description">
+                      An Android (Java) app for personal expense tracking. Uses
+                      SQLite for local storage and Material Design.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 portfolio-item isotope-item filter-ai-data">
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="../assets/img/portfolio/portfolio-9.webp"
+                      class="img-fluid"
+                      alt="AI Emotion Recognition"
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a
+                          href="../assets/img/portfolio/portfolio-9.webp"
+                          class="glightbox action-btn preview-btn"
+                          title="AI Emotion Recognition"
+                          ><i class="bi bi-eye"></i
+                        ></a>
+                        <a
+                          href="project-ai-emotion.html"
+                          class="action-btn details-btn"
+                          title="View Project"
+                          ><i class="bi bi-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta">
+                      <span class="portfolio-category"
+                        >AI / Machine Learning</span
+                      >
+                      <span class="portfolio-year">2025</span>
+                    </div>
+                    <h3 class="portfolio-title">
+                      AI Facial Emotion Recognition
+                    </h3>
+                    <p class="portfolio-description">
+                      Built an AI model (Python, OpenCV, TensorFlow) to analyze
+                      and recognize 7 basic human emotions from a live webcam
+                      feed.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-6 portfolio-item isotope-item filter-ai-data filter-web"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="../assets/img/portfolio/portfolio-11.webp"
+                      class="img-fluid"
+                      alt="Big Data Analysis"
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a
+                          href="../assets/img/portfolio/portfolio-11.webp"
+                          class="glightbox action-btn preview-btn"
+                          title="Big Data Analysis"
+                          ><i class="bi bi-eye"></i
+                        ></a>
+                        <a
+                          href="project-bigdata.html"
+                          class="action-btn details-btn"
+                          title="View Project"
+                          ><i class="bi bi-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta">
+                      <span class="portfolio-category">Big Data / Web</span>
+                      <span class="portfolio-year">2025</span>
+                    </div>
+                    <h3 class="portfolio-title">
+                      Customer Behavior Analysis (Big Data)
+                    </h3>
+                    <p class="portfolio-description">
+                      A project (from Samsung SIC) using Python (Pandas) to
+                      analyze large datasets and a web dashboard (Flask) to
+                      visualize insights.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-6 portfolio-item isotope-item filter-desktop-mobile"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="../assets/img/portfolio/portfolio-12.webp"
+                      class="img-fluid"
+                      alt="RSA Encryption App"
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a
+                          href="../assets/img/portfolio/portfolio-12.webp"
+                          class="glightbox action-btn preview-btn"
+                          title="RSA Encryption App"
+                          ><i class="bi bi-eye"></i
+                        ></a>
+                        <a
+                          href="project-crypto.html"
+                          class="action-btn details-btn"
+                          title="View Project"
+                          ><i class="bi bi-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta">
+                      <span class="portfolio-category"
+                        >Desktop App / Security</span
+                      >
+                      <span class="portfolio-year">2024</span>
+                    </div>
+                    <h3 class="portfolio-title">
+                      RSA & ElGamal Encryption App
+                    </h3>
+                    <p class="portfolio-description">
+                      Developed a Desktop app (Java, JavaFX) to simulate
+                      asymmetric encryption algorithms. Also implemented ElGamal
+                      in Python for research.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="services section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>My Expertise</h2>
+          <p>The primary skills and domains I can contribute to.</p>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-5">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-server"></i>
+                </div>
+                <div class="service-content">
+                  <h3>Backend Development (Java)</h3>
+                  <p>
+                    Building business logic, APIs, and system security using
+                    Java Spring Boot – my main strength.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-  <footer id="footer" class="footer light-background">
-    <div class="container">
-      <h3 class="sitename">Do Duy Toan</h3>
-      <p>4th-year IT student at Hanoi University of Industry, seeking opportunities in Java Web & AI.</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://github.com/toando22" target="_blank"><i class="bi bi-github"></i></a>
-        <a href="#"><i class="bi bi-linkedin"></i></a>
-        <a href="#"><i class="bi bi-facebook"></i></a>
-      </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="250">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-lightbulb"></i>
+                </div>
+                <div class="service-content">
+                  <h3>AI & Data Analysis (Python)</h3>
+                  <p>
+                    Building emotion recognition AI models (OpenCV, TensorFlow)
+                    and analyzing customer behavior (Big Data, Pandas).
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="300">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-display"></i>
+                </div>
+                <div class="service-content">
+                  <h3>Application Development (Full-stack)</h3>
+                  <p>
+                    Building complete Web (Spring, Thymeleaf) and Desktop
+                    (JavaFX) applications, from UI to database.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="350">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-shield-lock"></i>
+                </div>
+                <div class="service-content">
+                  <h3>Algorithms & Databases</h3>
+                  <p>
+                    Designing databases (MySQL) and applying algorithms (Data
+                    Structures, RSA, ElGamal) to practical applications.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>
+            Ready to discuss internship opportunities or interesting projects.
+            Let's get in touch!
+          </p>
+        </div>
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-5">
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="bi bi-chat-dots"></i>
+                </div>
+                <div class="info-content">
+                  <h4>Let's Connect</h4>
+                  <p>
+                    I'm here to discuss your vision and explore how we can work
+                    together.
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-details">
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="bi bi-envelope-open"></i>
+                  </div>
+                  <div class="detail-content">
+                    <span class="detail-label">Email</span>
+                    <span class="detail-value">doduytoan2201@gmail.com</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="bi bi-telephone-outbound"></i>
+                  </div>
+                  <div class="detail-content">
+                    <span class="detail-label">Phone</span>
+                    <span class="detail-value">0358 493 974</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="bi bi-geo-alt-fill"></i>
+                  </div>
+                  <div class="detail-content">
+                    <span class="detail-label">Location</span>
+                    <span class="detail-value">Bac Tu Liem, Hanoi</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="bi bi-github"></i>
+                  </div>
+                  <div class="detail-content">
+                    <span class="detail-label">GitHub</span>
+                    <span class="detail-value">github.com/toando22</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="form-wrapper">
+                <div class="form-header">
+                  <h3>Send me a message</h3>
+                </div>
+
+                <form action="https://formspree.io/f/xrborkon" method="post">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" required="" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" name="email" required="" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" name="subject" required="" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="projectMessage">Message</label>
+                    <textarea
+                      name="message"
+                      id="projectMessage"
+                      rows="5"
+                      required=""
+                    ></textarea>
+                  </div>
+
+                  <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Your message has been sent. Thank you!
+                    </div>
+                  </div>
+
+                  <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer light-background">
       <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Do Duy Toan</strong> <span>All Rights Reserved</span>
+        <h3 class="sitename">Do Duy Toan</h3>
+        <p>
+          Fullstack Developer at MISA JSC | Bachelor of Information Technology
+        </p>
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://github.com/toando22" target="_blank"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
         </div>
-        <div class="credits">
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <div class="container">
+          <div class="copyright">
+            <span>Copyright</span>
+            <strong class="px-1 sitename">Do Duy Toan</strong>
+            <span>All Rights Reserved</span>
+          </div>
+          <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <div id="preloader"></div>
+    <div id="preloader"></div>
 
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="../assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <script src="../assets/js/main.js"></script>
-
-</body>
-
+    <script src="../assets/js/main.js"></script>
+  </body>
 </html>
